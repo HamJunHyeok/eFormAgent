@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32106.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "e-Form Agent", "e-Form Agent.vbproj", "{FF6889C5-246D-4EEE-8E96-9B995EAFAF0A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5767EAC3-F8EF-4ADA-8F44-6CF2B6CC4605} = {5767EAC3-F8EF-4ADA-8F44-6CF2B6CC4605}
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "NeoModule", "..\NeoModule\NeoModule.vbproj", "{5767EAC3-F8EF-4ADA-8F44-6CF2B6CC4605}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "e-FormAgent Setup", "..\e-FormAgent Setup\e-FormAgent Setup.vdproj", "{60BAB566-1914-43CE-899F-EE80197A8EF2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF6889C5-246D-4EEE-8E96-9B995EAFAF0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF6889C5-246D-4EEE-8E96-9B995EAFAF0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF6889C5-246D-4EEE-8E96-9B995EAFAF0A}.Debug|x64.ActiveCfg = Debug|x64
+		{FF6889C5-246D-4EEE-8E96-9B995EAFAF0A}.Debug|x64.Build.0 = Debug|x64
+		{FF6889C5-246D-4EEE-8E96-9B995EAFAF0A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FF6889C5-246D-4EEE-8E96-9B995EAFAF0A}.Debug|x86.Build.0 = Debug|Any CPU
+		{FF6889C5-246D-4EEE-8E96-9B995EAFAF0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF6889C5-246D-4EEE-8E96-9B995EAFAF0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF6889C5-246D-4EEE-8E96-9B995EAFAF0A}.Release|x64.ActiveCfg = Release|x64
+		{FF6889C5-246D-4EEE-8E96-9B995EAFAF0A}.Release|x64.Build.0 = Release|x64
+		{FF6889C5-246D-4EEE-8E96-9B995EAFAF0A}.Release|x86.ActiveCfg = Release|Any CPU
+		{FF6889C5-246D-4EEE-8E96-9B995EAFAF0A}.Release|x86.Build.0 = Release|Any CPU
+		{5767EAC3-F8EF-4ADA-8F44-6CF2B6CC4605}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5767EAC3-F8EF-4ADA-8F44-6CF2B6CC4605}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5767EAC3-F8EF-4ADA-8F44-6CF2B6CC4605}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5767EAC3-F8EF-4ADA-8F44-6CF2B6CC4605}.Debug|x64.Build.0 = Debug|Any CPU
+		{5767EAC3-F8EF-4ADA-8F44-6CF2B6CC4605}.Debug|x86.ActiveCfg = Debug|x86
+		{5767EAC3-F8EF-4ADA-8F44-6CF2B6CC4605}.Debug|x86.Build.0 = Debug|x86
+		{5767EAC3-F8EF-4ADA-8F44-6CF2B6CC4605}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5767EAC3-F8EF-4ADA-8F44-6CF2B6CC4605}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5767EAC3-F8EF-4ADA-8F44-6CF2B6CC4605}.Release|x64.ActiveCfg = Release|Any CPU
+		{5767EAC3-F8EF-4ADA-8F44-6CF2B6CC4605}.Release|x64.Build.0 = Release|Any CPU
+		{5767EAC3-F8EF-4ADA-8F44-6CF2B6CC4605}.Release|x86.ActiveCfg = Release|x86
+		{5767EAC3-F8EF-4ADA-8F44-6CF2B6CC4605}.Release|x86.Build.0 = Release|x86
+		{60BAB566-1914-43CE-899F-EE80197A8EF2}.Debug|Any CPU.ActiveCfg = Debug
+		{60BAB566-1914-43CE-899F-EE80197A8EF2}.Debug|x64.ActiveCfg = Debug
+		{60BAB566-1914-43CE-899F-EE80197A8EF2}.Debug|x86.ActiveCfg = Debug
+		{60BAB566-1914-43CE-899F-EE80197A8EF2}.Release|Any CPU.ActiveCfg = Release
+		{60BAB566-1914-43CE-899F-EE80197A8EF2}.Release|x64.ActiveCfg = Release
+		{60BAB566-1914-43CE-899F-EE80197A8EF2}.Release|x86.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6B29E3B8-1BA3-41CF-B0A2-CC2CF3FFC5F0}
+	EndGlobalSection
+EndGlobal

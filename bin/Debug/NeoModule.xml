@@ -1,0 +1,3781 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+NeoModule
+</name>
+</assembly>
+<members>
+<member name="T:NeoModule.My.Resources.Resources">
+<summary>
+  지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+</summary>
+</member>
+<member name="P:NeoModule.My.Resources.Resources.ResourceManager">
+<summary>
+  이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+</summary>
+</member>
+<member name="P:NeoModule.My.Resources.Resources.Culture">
+<summary>
+  이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대해 현재 스레드의 CurrentUICulture 속성을
+  재정의합니다.
+</summary>
+</member>
+<member name="P:NeoModule.My.Resources.Resources._12">
+<summary>
+  System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+</summary>
+</member>
+<member name="P:NeoModule.My.Resources.Resources.AgendaView">
+<summary>
+  System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+</summary>
+</member>
+<member name="P:NeoModule.My.Resources.Resources.Opt16">
+<summary>
+  System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+</summary>
+</member>
+<member name="P:NeoModule.My.Resources.Resources.stateBackColors">
+<summary>
+  26,80,172|95,154,255|81,106,255|81,221,255|8,200,184|110,110,110|76,153,114|144,127,94|129,96,77|219,134,58|138,138,138|242,177,0|226,197,0|126,66,88|126,66,88|244,121,255|72,25,99|100,167,21|229,77,74과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member>
+<member name="P:NeoModule.My.Resources.Resources.stateCaptions">
+<summary>
+  검사|물치|방사|약|재진|정신|주사|처치|초진|만성|진X|예약|물치|처방|외박|HPV|촉탁|협진|가정과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member>
+<member name="P:NeoModule.My.Resources.Resources.stateForeColors">
+<summary>
+  255,255,255|255,255,255|255,255,255|255,255,255|255,255,255|255,255,255|255,255,255|255,255,255|255,255,255|255,255,255|255,255,255|255,255,255|63,63,63|255,255,255|255,255,255|255,255,255|255,255,255|255,237,152|255,255,255과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member>
+<member name="P:NeoModule.My.Resources.Resources.가로">
+<summary>
+  System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+</summary>
+</member>
+<member name="P:NeoModule.My.Resources.Resources.세로">
+<summary>
+  System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+</summary>
+</member>
+<member name="M:NeoModule.clsCalendar.sP_DrawCalendar(System.String,System.Boolean)">
+ <summary>
+ 22/11/11 준혁 파라미터추가
+ </summary>
+ <param name="strDate"></param>
+ <param name="DayFontBold">일자 폰트 굵기</param>
+</member>
+<member name="M:NeoModule.ClsCodeBase.sP_LoadluEdit(DevExpress.XtraEditors.LookUpEdit@,NeoModule.mdlGlobal.ocsEnumCodeLibType,System.Boolean,System.String,System.Boolean,System.Boolean,System.String,System.String,System.Boolean)">
+ <summary>
+ 코드정보 데이터 LookUpEdit 셋팅하기 
+ </summary>
+ <param name="luR_Add"></param>
+ <param name="intR_Index"></param>
+ <param name="bln전체여부"></param>    
+ <param name="str전체텍스트">전체가 있을 경우 전체의 명칭</param>
+ <param name="blnNumber">표기되는 데이터가 숫자값인지 여부</param>
+ <param name="bln중복제거"></param>
+ <param name="str전체코드">전체가 있을 경우 전체의 코드</param>    
+ <param name="strNullText"></param>
+ <param name="bln명칭에코드보이기">명칭 앞 부분에 코드도 표기해주는 기능</param>
+</member>
+<member name="M:NeoModule.ClsCodeBase.sP_Refresh(NeoModule.mdlGlobal.ocsEnumCodeLibType)">
+ <summary>
+ 코드정보 새로고침 하기
+ </summary>
+ <param name="intIndex">-1 -> 전체 새로고침</param>
+</member>
+<member name="M:NeoModule.clsDatePicker.#ctor(DevExpress.XtraBars.BarManager,DevExpress.XtraBars.Bar,NeoModule.clsDatePicker.enumQuickButtonType,System.Boolean,System.Boolean)">
+ <summary>
+ 기간검색
+ </summary>
+ <param name="_BarManager"></param>
+ <param name="_Bar"></param>
+ <param name="QuickType"></param>
+ <param name="IsStatic">통계용 퀵버튼 생성 유무 (일,월,분기,년)</param>
+</member>
+<member name="M:NeoModule.clsDBMng.GetRecordset(System.String,ADODB.CursorLocationEnum,ADODB.CursorTypeEnum,ADODB.LockTypeEnum,System.Int32,System.Boolean)">
+ <summary>
+ 레코드 가져오기
+ </summary>
+ <param name="query">쿼리</param>
+ <param name="CursorLocation"></param>
+ <param name="CursorType"> RecordSet의 한 레코드(Cursor)에 대한 접근방식 지정
+ adOpenForwardOnly : 앞으로만 이동 가능. (가장 가벼움). 읽기만 가능.
+ adOpenKeyset      : 자유롭게 이동 가능. 다른 사용자가 수정한 내용만 볼 수 있음(추가/삭제는 볼 수 없음). 읽기/쓰기 가능.
+ adOpenDynamic     : 자유롭게 이동 가능. 다른 사용자가 추가,수정,삭제한 내용을 모두 볼 수 있음. (가장 무거움). 읽기/쓰기 가능.
+ adOpenStatic      : 자유롭게 이동 가능. 본인이 추가,수정,삭제한 내용만 볼 수 있음. 읽기/쓰기 가능.</param>
+ <param name="LockType"> RecordSet 데이터의 수정에 대한 잠금설정(다른 사용자 접근가능 여부) 지정.
+ adLockReadOnly	  :	읽기만 가능.
+ adLockPessimistic :	데이터 편집 후 바로 잠금.
+ adLockOptimistic  : Update()함수 호출시에 잠금.
+ adLockBatchOptimistic :	UpdateBatch()함수로 여러개의 레코드 업데이트시 잠금.</param>
+ <param name="Options"></param>
+ <param name="blnServerConnCheck">서버 연결체크를 실행할지 여부</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsDBMng.Execute(System.String,System.Boolean,System.Int32@)">
+ <summary>
+ 쿼리 실행.
+ </summary>
+ <param name="query"></param>
+ <param name="blnServerConnCheck">서버 연결체크를 실행할지 여부</param>
+ <param name="intR_GetApplyRecordCnt">변경된 레코드 개수</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsDBMng.fP_GetPictureFromFields(ADODB.Field)">
+ <summary>
+ 이미지 필드 image로 읽어서 반환
+ </summary>
+ <param name="ImgFields"></param>
+ <returns>이미지 객체 반환</returns>
+</member>
+<member name="M:NeoModule.clsDBMng.sP_ReplaceParam(System.String@,System.String,NeoModule.clsDBMng.ocsEnumDBDataType,System.String)">
+ <summary>
+ CommandAppendPara와 똑같은 후처리 방식이지만 실제로 구분자값을 Replace하여 쿼리를 만들어주는 함수. 순서대로 구분값을 인식하기 때문에 순서에 주의할 것.
+ </summary>
+ <param name="strR_Origin">원본 쿼리</param>    
+ <param name="strValue">입력할 값</param>
+ <param name="rDateType">데이터 형식</param>
+ <param name="strFindChar">Replace할 구분자값. 기본은 [#PARAM]</param>
+</member>
+<member name="M:NeoModule.clsDBMng.GetParameter(System.String)">
+ <summary>
+ 현재 입력되어 있는 파라메터 가져오기
+ </summary>
+ <param name="strParaName">파라메터 이름</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsDBMng.CommandAppendPara(System.String,System.Object,NeoModule.clsDBMng.ocsEnumDBDataType,ADODB.ParameterDirectionEnum)">
+ <summary>
+ 파라메터 방식의 데이터 처리 사용시에 파라메터 추가 함수
+ </summary>
+ <param name="strParaName">파라메터 이름</param>
+ <param name="objValue">파라메터 값</param>
+ <param name="pType">파라메터의 타입</param>
+ <param name="Direction">Input/Output 정의</param>
+ <returns>성공 여부</returns>
+</member>
+<member name="M:NeoModule.clsDBMng.CommandExcute(System.String,System.Boolean)">
+ <summary>
+ CommandAppendPara 함수로 추가한 파라메터로 데이터 입력하기.
+ </summary>
+ <param name="strSql">입력할 쿼리</param>
+ <param name="paraClear">쿼리 실행 후 파라메터를 클리어할지 여부 지정.</param>
+ <returns>성공여부</returns>
+</member>
+<member name="M:NeoModule.clsDBMng.CommandParaClear">
+ <summary>
+ 파라메터 클리어 함수
+ </summary>
+</member>
+<member name="M:NeoModule.clsDBMng.fP_FieldExists(ADODB.Recordset,System.String)">
+ <summary>
+ Recordset에 필드 있는지 체크
+ </summary>
+ <param name="rs"></param>
+ <param name="sFieldName"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsDBMng.ImageDBLoad(ADODB.Field,System.String)">
+ <summary>
+ DB에 있는 이미지를 지정된 경로에 파일로 저장
+ </summary>
+ <param name="ImageField">이미지 필드</param>
+ <param name="strFileName">파일 로드할 경로</param>
+ <returns>이미지 Size(Byte) 반환</returns>
+</member>
+<member name="M:NeoModule.clsDBMng.ImageDBSave(ADODB.Field,System.String)">
+ <summary>
+ 경로 파일이미지 DB Field에 저장하기
+ </summary>
+ <param name="ImageField">저장할 이미지 ADODB.Field</param>
+ <param name="strFileName">저장할 이미지 파일경로</param>
+ <returns></returns>
+</member>
+<member name="T:NeoModule.clsDemandEDI">
+ <summary>
+ 22/08/12 준혁 청구 샘파일생성 클래스
+ </summary>
+</member>
+<member name="M:NeoModule.clsDemandEDI.fP_CreateSAMFile(System.String,System.String)">
+ <summary>
+ 청구 샘파일 생성 함수
+ </summary>
+ <param name="MainDB">청구데이터가 있는 데이터베이스 명 [SenseReview, Sense 등] </param>
+ <param name="DemandMainID">청구서의 일련번호 필드</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsDemandEDI.fP_CreateDX(System.Int32)">
+ <summary>
+ 상병내역 작성
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsDemandEDI.fP_CreateInClnc(System.Int32)">
+ <summary>
+ 원내처방내역 작성
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsDemandEDI.fP_CreateOutClnc(System.Int32)">
+ <summary>
+ 원외처방내역 작성
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsDemandEDI.fP_CreateSpcl(System.Int32)">
+ <summary>
+ 특정내역 작성
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsPopup.fP_Show자보23사유(System.String)">
+ <summary>
+ 22/08/19 준혁 자보23사유 입력팝업 추가
+ </summary>
+ <param name="str사유"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsPopup.fP_Show시간입력(System.String,System.String,System.String)">
+ <summary>
+ 시간입력
+ </summary>
+ <param name="Prompt">메시지 문구</param>
+ <param name="strTitle">타이틀</param>
+ <param name="strDefaultTime">기본 시간값</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsPopup.fP_Show똑닥접수중복체크(System.String,NeoModule.clsJinBase)">
+ <summary>
+ 똑닥접수 중복된 환자인지 체크
+ 인자값 byval 변경
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsPopup.fP_ZeroCostMessage(System.String,System.String)">
+ <summary>
+ 21/09/01 준혁 0원단가 메시지추가
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsPopup.fP_외래가산여부(System.String,System.String)">
+ <summary>
+ 처방코드 야간/공휴가산 안함 옵션에따라 처치시간 변경 시 가산해줄건지 여부 묻는 팝업 추가
+ </summary>
+ <param name="str처방코드"></param>
+ <param name="str처방명칭"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsPopup.fP_Show메모(System.String,System.String,System.Int32)">
+ <summary>
+ 아무거나 메모나 전달사항등 팝업으로 입력해야하는 경우 사용
+ </summary>
+ <param name="strTitle">메모 타이틀</param>
+ <param name="strMemo">먼저 입력되어있던 메모내용을 수정할경우</param>
+ <param name="intPopupHeight">팝업창 높이</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsPopup.fP_Show음성호출세팅">
+ <summary>
+ 21/08/10 준혁 추가
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsPopup.fP_Show똑닥예약중복체크(System.String,System.Int32)">
+ <summary>
+ 똑닥접수 중복된 환자인지 체크
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsPopup.fP_ShowSlipTime(System.String)">
+ <summary>
+ 22/05/23 준혁 추가
+ </summary>
+ <param name="strDefalut">원래 입력되있던 처치시간</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsPopup.fD_GetControl(System.String)">
+ <summary>
+ 컨트롤 명칭으로 LayoutControl 내부의 컨트롤 가져오기
+ </summary>
+ <param name="strCtrlName"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsPopup.fD_GetlayoutItem(System.String)">
+ <summary>
+ 컨트롤 명칭으로 LayoutControl 내부의 LayoutItem 가져오기
+ </summary>
+ <param name="strCtrlName"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsPopup.clsDynamicPopup.AddControl(System.Windows.Forms.Control,System.Boolean,System.String,DevExpress.XtraLayout.Utils.LayoutVisibility,DevExpress.Utils.Locations)">
+ <summary>
+ 22/05/23 준혁 textlocation 추가
+ </summary>
+ <param name="Control"></param>
+ <param name="blnLabelVisible"></param>
+ <param name="strLabelText"></param>
+ <param name="ControlVisible"></param>
+ <param name="TextLocation"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsPopup.clsDynamicPopup.AddControl(DevExpress.XtraLayout.LayoutControlItem,System.Windows.Forms.Control,System.Boolean,System.String,DevExpress.XtraLayout.Utils.InsertType)">
+ <summary>
+ 기준 layoutControlItem에서 지정된 방향으로 컨트롤 추가.
+ </summary>
+ <param name="lcBaseControl">기준 layoutControlItem(기존에 추가된 컨트롤)</param>
+ <param name="Control">새로 추가할 컨트롤</param>
+ <param name="blnLabelVisible"></param>
+ <param name="strLabelText"></param>
+ <param name="insertType">방향 지정</param>
+</member>
+<member name="M:NeoModule.clsFormManager.#ctor">
+ <summary>
+ 생성자
+ </summary>
+</member>
+<member name="M:NeoModule.clsFormManager.sP_ExecuteChildForms(System.IntPtr,NeoModule.clsFormInfo.enEventKind,System.String,NeoModule.xfrmProgress@,System.Int32,System.Type[])">
+ <summary>
+ 부모폼 핸들로 Excute 보내기
+ </summary>
+ <param name="intParentHwnd"></param>
+ <param name="EventKind"></param>
+ <param name="str전달값"></param>
+ <param name="int제외폼Hwnd">제외할 폼 핸들값</param>
+ <param name="ExceptFormType">제외할 폼 타입 배열</param>
+</member>
+<member name="M:NeoModule.clsFormManager.sP_ExecuteChildForms(System.IntPtr,NeoModule.clsFormInfo.enEventKind,System.String,System.Type,NeoModule.xfrmProgress@,System.Int32,System.Type)">
+ <summary>
+ 부모폼 핸들로 특정한 타입의 폼에만 Excute 보내기
+ </summary>
+ <param name="intParentHwnd"></param>
+ <param name="EventKind"></param>
+ <param name="str전달값"></param>
+ <param name="FormType">보낼 폼 타입</param>
+ <param name="ProgressBar">프로그래스 창</param>
+ <param name="int제외폼Hwnd">제외할 폼</param>
+ <param name="ExceptFormType">제외할 폼 타입</param>
+</member>
+<member name="M:NeoModule.clsFormManager.sP_ExecuteForm(System.Type,NeoModule.clsFormInfo.enEventKind,System.String,System.Object)">
+ <summary>
+ Form Type으로 Excute 보내기
+ </summary>
+ <param name="FormType"></param>
+ <param name="EventKind"></param>
+ <param name="str전달값"></param>
+</member>
+<member name="M:NeoModule.clsFormManager.sP_ExecuteForm(System.String,NeoModule.clsFormInfo.enEventKind,System.String,System.Object)">
+ <summary>
+ Form name으로 Excute 보내기
+ </summary>
+ <param name="strFormName"></param>
+ <param name="EventKind"></param>
+ <param name="str전달값"></param>
+</member>
+<member name="M:NeoModule.clsFormManager.sP_ExecuteForm(System.IntPtr,NeoModule.clsFormInfo.enEventKind,System.String,System.Object)">
+ <summary>
+ 핸들로 Excute 보내기
+ </summary>
+ <param name="intHwnd"></param>
+ <param name="EventKind"></param>
+ <param name="str전달값"></param>
+</member>
+<member name="M:NeoModule.clsFormManager.fP_ChildFormsGetCount(System.IntPtr,System.Int32,System.Type)">
+ <summary>
+ 부모폼 핸들 COunt구하기
+ </summary>
+ <param name="intParentHwnd"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsFormManager.fP_GetFormParam(System.String,NeoModule.clsFormInfo.enParamEventKind)">
+ <summary>
+ 특정 폼에 값 가져오기
+ </summary>
+ <param name="strFormName"></param>
+ <param name="EventKind"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsFormManager.fP_GetFormParam(System.IntPtr,NeoModule.clsFormInfo.enParamEventKind)">
+ <summary>
+ 특정 폼에 값 가져오기
+ </summary>
+ <param name="intHwnd"></param>
+ <param name="EventKind"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsFormManager.fP_GetFormParam(System.Type,NeoModule.clsFormInfo.enParamEventKind)">
+ <summary>
+ 특정 폼에 값 가져오기
+ </summary>
+ <param name="FormType"></param>
+ <param name="EventKind"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsFormManager.fP_GetChildFormParam(System.IntPtr,System.Type,NeoModule.clsFormInfo.enParamEventKind)">
+ <summary>
+ 자식 폼들중에 특정 폼에 값 가져오기
+ </summary>
+ <param name="intParentHwnd">부모핸들</param>
+ <param name="FormType"></param>
+ <param name="EventKind"></param>
+ <returns></returns>
+</member>
+<member name="P:NeoModule.clsFormManager.item(System.Int32)">
+ <summary>
+ Index로 폼 클래스 검색.
+ </summary>
+ <param name="intIndex">인덱스</param>
+ <returns>폼 정보 클래스</returns>
+</member>
+<member name="P:NeoModule.clsFormManager.ItemByHwnd(System.IntPtr)">
+ <summary>
+ Form Handle값으로 폼 클래스 검색
+ </summary>
+ <param name="intHwnd">Form Handle</param>
+ <returns>폼 정보 클래스</returns>
+</member>
+<member name="P:NeoModule.clsFormManager.ItemByType(System.Type)">
+ <summary>
+ Form Type으로 폼 클래스 검색
+ </summary>
+ <param name="FormType">폼 타임</param>
+ <returns>같은 타입의 폼을 여러개 로드할 수 있으니 List로 반환</returns>
+</member>
+<member name="P:NeoModule.clsFormManager.ItemByFormName(System.String)">
+ <summary>
+ Form Name으로 폼 클래스 검색
+ </summary>
+ <param name="strFormName">폼 이름</param>
+ <returns>같은 이름의 폼을 여러개 로드할 수 있으니 List로 반환</returns>
+</member>
+<member name="M:NeoModule.clsFormManager.ADDForm(DevExpress.XtraEditors.XtraForm@,System.String,DevExpress.XtraBars.Docking.DockPanel@,System.IntPtr,System.Boolean,System.Boolean,System.String,System.String,System.Object@,System.String,System.Boolean,System.String,System.Boolean,System.Boolean,System.Boolean,DevExpress.Utils.DefaultBoolean,System.Drawing.Image,System.Boolean,System.Boolean)">
+ <summary>
+ 관리할 폼 추가하기
+ </summary>
+ <param name="frmR_AddForm">추가할 폼</param>
+ <param name="str폼구분">폼 구분 값(ini 세션 값)</param>
+ <param name="DockPanel">도킹판넬에 올린 경우 판넬 전달</param>
+ <param name="blnLoadLastPos">마지막값 위치,크기를 불러올지 여부</param>
+ <param name="str타이틀">실제 표기 타이틀</param>
+ <param name="str전달값">폼 초기 전달할 값</param>
+ <param name="objR_전달객체">폼 초기 전달할 객체</param>
+ <param name="intParentHwnd">폼을 로드한 부모핸들 값</param>
+ <param name="strSenseFormName">센스에서 쓰던 폼이름(디비값 연동을위해)</param>
+ <param name="bln메인폼">메인폼인지 여부.</param>
+ <Return>추가 된 폼 클래스 인덱스</Return>
+</member>
+<member name="M:NeoModule.clsFormManager.RemoveHwnd(System.IntPtr)">
+ <summary>
+ Handle값으로 끄기
+ </summary>
+ <param name="intHwnd"></param>
+</member>
+<member name="M:NeoModule.clsFormInfo.#ctor(System.Windows.Forms.Form@,System.String,DevExpress.XtraBars.Docking.DockPanel@,System.IntPtr,System.Boolean,System.String,System.String,System.Object@,System.String,System.Boolean,System.String,System.Boolean)">
+ <summary>
+ 폼 정보 클래스 생성자
+ </summary>
+ <param name="frmR_AddForm">추가할 폼</param>
+ <param name="str폼구분">폼 구분 값(ini 세션 값)</param>
+ <param name="blnLoadLastPos">마지막값 위치,크기를 불러올지 여부</param>
+ <param name="str전달값">폼 초기 전달할 값</param>
+ <param name="objR_전달객체">폼 초기 전달할 객체</param>
+ <param name="intParentHwnd">폼을 로드한 부모핸들 값</param>
+ <param name="strSenseFormName">센스에서 쓰던 폼이름(디비값 연동을위해)</param>
+ <param name="bln메인폼">메인폼인지 여부</param>
+</member>
+<member name="M:NeoModule.clsFormInfo.fP_GetParam(NeoModule.clsFormInfo.enParamEventKind)">
+ <summary>
+ 해당 폼에 값 가져오기
+ </summary>
+ <param name="EventKind"></param>
+ <returns></returns>
+</member>
+<member name="T:NeoModule.clsGroupCode">
+ <summary>
+ 묶음코드 테이블 
+ </summary>
+</member>
+<member name="M:NeoModule.clsGroupCode.fP_SaveGroupCode">
+ <summary>
+ 21/07/20 준혁 묶음코드 저장함수 추가
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsHospital.fP_GetNightKong(System.String,System.String)">
+ <summary>
+ 병원 진료 시작/마감 시간 기준으로 공상구분 가져오는 함수
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsHospital.fP_IsHoliday(System.String)">
+ <summary>
+ 공휴일 여부 체크
+ </summary>
+ <param name="strDate">체크할 날짜</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsHospital.sD_LoadSugaRule">
+ <summary>
+ 보험기준 로드하기
+ </summary>
+</member>
+<member name="M:NeoModule.clsHospital.sD_LoadOutLab">
+ <summary>
+ 외주검사 정보 로드
+ </summary>
+</member>
+<member name="M:NeoModule.clsHospital.sD_LoadExtraService">
+ <summary>
+ 부가서비스 정보 로드
+ </summary>
+</member>
+<member name="M:NeoModule.clsHospital.SearchSugaRule(System.String)">
+ <summary>
+ 적용일자로 보험기준 검색하기
+ </summary>
+ <param name="strApplyDate">적용일자</param>
+ <returns>데이터 있는지 유무</returns>
+</member>
+<member name="T:NeoModule.ClsSugaRule">
+ <summary>
+ 보험기준 클래스
+ </summary>
+</member>
+<member name="P:NeoModule.clsJinBase.Key">
+ <summary>
+ 공용선택창에 DataSource로 밀어넣을때 DataBinding에 사용할 속성들 정의
+ </summary>
+</member>
+<member name="M:NeoModule.clsJinBase.fP_GetJinNumberNotCancle(System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 취소, 삭제를 제외한 마지막 진료번호 가져오기
+ </summary>
+ <param name="str진료년"></param>
+ <param name="str진료월"></param>
+ <param name="str진료일"></param>
+ <param name="str챠트번호"></param>
+ <returns></returns>
+ 22/11/02 준혁 입원ID 파라미터 추가
+</member>
+<member name="M:NeoModule.clsJinBase.fP_GetJinDateNumber">
+ <summary>
+ 진료번호 새로 구하기
+ </summary>
+ <returns>Max(진료번호) + 1 </returns>
+</member>
+<member name="M:NeoModule.clsJinBase.fP_LoadLastJubsu(System.String,System.String,System.String,System.String,NeoModule.mdlGlobal.ocsEnumBohumKind)">
+ <summary>
+ 최근 접수데이터 구하기
+ </summary>
+ <param name="str챠트번호">챠트번호</param>
+ <param name="str진료일자">특정일자의 마지막 접수를 조회할 경우</param>
+ <param name="str차상위장애">자격조회에서 장애인여부 판단할때 사용하는 필드값 (조산아등록번호, 치매질환사전등록번호, 접수구분) </param>
+ <returns>있는지 여부 값</returns>
+</member>
+<member name="M:NeoModule.clsJinBase.fP_LoadLastJiwon(System.String,System.String,System.String)">
+ <summary>
+ 최근 진료지원 접수데이터 구하기
+ </summary>
+ <param name="str진료일자">특정일자의 마지막 접수를 조회하는경우</param>
+ <param name="str챠트번호">챠트번호</param>
+ <param name="str지원코드">조회할 지원코드의 부서</param>
+ <returns>값 여부</returns>
+</member>
+<member name="M:NeoModule.clsJinBase.fP_GetJinbase(System.String,System.String)">
+ <summary>
+ 해당 일자의 Jinbase 가져오기. 없으면 Nothing 
+ </summary>
+ <param name="str진료일자"></param>
+ <param name="str챠트번호"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsJinBase.fP_GetRstBeforeJinBase(System.String,System.String,System.Byte)">
+ <summary>
+ 23/01/11 준혁 넘겨받은 일자 기준으로 이전 접수내역 가져오기
+ </summary>
+ <param name="str기준일자"></param>
+ <param name="str챠트번호"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsJinBase.SearchJinBase(System.String,System.String)">
+ <summary>
+ 해당 일자의 진료 가져오기.(진료가 여러개면 선택창 띄움)
+ </summary>
+ <param name="str진료일자"></param>
+ <param name="str챠트번호"></param>
+</member>
+<member name="M:NeoModule.clsJinBase.SearchJinBase(System.String,System.String,System.String,System.Byte,System.String,System.Boolean)">
+ <summary>
+ 진료기본 검색해서 로드하기
+ </summary>
+ <param name="str진료년">진료년</param>
+ <param name="str진료월">진료월</param>
+ <param name="str진료일">진료일</param>
+ <param name="byt진료번호">진료번호</param>
+ <param name="str챠트번호">챠트번호</param>
+</member>
+<member name="M:NeoModule.clsJinBase.SearchJinBase(System.Int32,System.String,System.String,System.String)">
+ <summary>
+ 입원ID로 진료기본 검색해서 로드하기
+ </summary>
+ <param name="int입원ID"></param>
+ 21/06/09 준혁 진료일자 조건 추가
+</member>
+<member name="M:NeoModule.clsJinBase.sP_Refresh">
+ <summary>
+ Jinbase 새로고침하기
+ </summary>
+</member>
+<member name="M:NeoModule.clsJinBase.fP_SaveDataDrugInOut(System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Boolean,System.Int16,System.Int16,System.Int16)">
+ <summary>
+ 원내투약일수, 주사일수 업데이트
+ </summary>
+ <param name="shtV_원내내복"></param>
+ <param name="shtV_원내외용"></param>
+ <param name="shtV_원내주사"></param>
+ <param name="shtV_원외경구"></param>
+ <param name="shtV_원내내복전액본인"></param>
+ <param name="shtV_원내외용전액본인"></param>
+ <param name="shtV_원내주사전액본인"></param>
+ <param name="blnV_처방전교부번호"></param>
+ <param name="shtV_원외급여일수">급여만</param>
+ <param name="shtV_원외최대일수">전체단가적용</param>
+ <param name="shtV_원외급여포함일수">급여, 전액본인, 선별급여</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsJinBase.fP_GetRstSymp">
+ <summary>
+ 22/11/18 준혁 증상 레코드셋 받아오는 함수 추가
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsJinBase.fP_DataSave수납상태(System.Byte,System.Byte)">
+ <summary>
+ 수납상태 변경 함수
+ == 쓰는 곳 ==
+ 수납완료 > 수납상태0 수납여부1 진료상태9
+ 수납취소 > 수납상태1 수납여부2 진료상태9
+ </summary>
+ <param name="s수납상태"></param>
+ <param name="s수납여부"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsJinBase.fP_DataSaveAmtBase">
+ <summary>
+ 22/11/18 준혁 추가
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsJinBase.fP_GetFindPreNumber(System.Int32,System.String,System.Boolean)">
+ <summary>
+ 22/07/18 준혁 처방전교부번호 중복체크 함수 추가
+ </summary>
+ <param name="intL_Number"></param>
+ <param name="str진료일자"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsJinBase.fP_SaveDataPrescriptionNumber(System.Int32)">
+ <summary>
+ 22/07/18 준혁 처방전 교부번호 업데이트 함수 추가
+ </summary>
+ <param name="int처방전교부번호"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsJinBase.fP_SaveJinBase">
+ <summary>
+ 진료기본 저장
+ </summary>
+ <returns>성공 True/ 실패 False</returns>
+</member>
+<member name="M:NeoModule.clsJinBase.fP_OverWriteSympCheck">
+ <summary>
+ 증상값이 변경되었을 때 덮어쓸지 체크
+ </summary>        
+ <returns>Array 0 : 0:덮어쓰기 / 1:이어붙이기 / 2:덮어쓰지않기 | Array 1 : 현재 DB에 저장되어 있는 값</returns>
+</member>
+<member name="M:NeoModule.clsJinBase.fP_SaveJinState(NeoModule.mdlGlobal.ocsEnumJinState)">
+ <summary>
+ 진료상태 변경
+ </summary>   
+ <param name="진료상태"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsJinBase.fP_SaveJinState(System.String,System.String,System.String,System.String,System.Byte,NeoModule.mdlGlobal.ocsEnumJinState)">
+ <summary>
+ 진료상태 변경
+ </summary>
+ <param name="str챠트번호"></param>
+ <param name="str진료년"></param>
+ <param name="str진료월"></param>
+ <param name="str진료일"></param>
+ <param name="byt진료번호"></param>
+ <param name="진료상태"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsJinBase.fP_SaveWardJinBase(NeoModule.ClsJinWard)">
+ <summary>
+ 입원기간의 진료기본들 변경사항 적용해주기. ※함수 호출시 jinbase에는 입원한 날의 진료기본을 로드하고 있다는 가정하에 실행.
+ </summary>
+ <param name="_clsJinWard"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsJinBase.fP_Get산정특례부담율(NeoModule.mdlGlobal.ocsEnumSanSpc)">
+ <summary>
+ 산정특례 데이터 값을 실제 부담률로 반환
+ </summary>
+ <param name="sbyt산정특례"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsJinBase.fP_GetJinStateName(NeoModule.mdlGlobal.ocsEnumJinState)">
+ <summary>
+ JinState 이름 반환 
+ </summary>
+ <param name="enJinState"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsJinBaseList.Find(System.String,System.String,System.String,System.String,System.String,System.Int32)">
+ <summary>
+ 진료기본 찾기 
+ 년, 월, 일, 진료번호, 챠트번호로 찾는 경우 (챠트번호는 사실 의미 없음 다 같은 환자의 진료기본 List임 // Key값을 만드려고 씀)
+ </summary>
+</member>
+<member name="M:NeoModule.clsJinBaseList.Find(System.String,System.String,System.String)">
+ <summary>
+ 진료기본 찾기 
+ 년, 월, 일만 알 경우
+ </summary>
+ <param name="sYear"></param>
+ <param name="sMonth"></param>
+ <param name="sDate"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsJinBaseList.Find(System.String,System.Int32,System.Boolean)">
+ <summary>
+ 진료기본 찾기 
+ 진료일자로 찾기
+ </summary>
+ <param name="sJinDate"></param>
+ <param name="blnCancelBtn">진료일자 선택창의 닫기버튼 활성화 여부</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsJinBaseList.FindAll(System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 진료기본 여러개 찾기
+ </summary>
+</member>
+<member name="M:NeoModule.clsJinBaseList.FindAll(System.String,System.String,System.String)">
+ <summary>
+ 진료기본 여러개 찾기
+ </summary>
+</member>
+<member name="M:NeoModule.ClsJinStation.sP_LoadluEdit(System.Object@,System.String,System.Boolean,System.Boolean,System.String,System.String,System.String)">
+ <summary>
+ 특정 지원구분의 진료지원실 LookUpEdit 셋팅하기
+ </summary>
+ <param name="luR_Add">셋팅할 LookUpEdit 컨트롤</param>
+ <param name="str진료지원구분">셋팅할 지원구분 ,(conG_열거)를 구분자로 전달 </param>
+ <param name="str수납처">사용자과별 진료실설정 옵션 사용시 사용자의 진료지원코드 전달</param> '21/11/11 명주 추가
+</member>
+<member name="M:NeoModule.ClsJinStation.sP_LoadCheckComboEdit(System.Object@,System.String,System.Boolean,System.Boolean,System.String)">
+ <summary>
+ 특정 지원구분의 진료지원실 CheckedComboBoxEdit 셋팅하기
+ </summary>
+ <param name="checkedComboR_Add">셋팅할 CheckedComboBoxEdit 컨트롤</param>
+ <param name="str진료지원구분">셋팅할 지원구분 ,(conG_열거)를 구분자로 전달 </param>
+ <param name="bln전체여부">전체 진료실을 표기할지 여부</param>
+ <param name="bln의사이름표기">리스트 진료실 이름 뒤에 의사이름까지 표기할지 여부</param>
+ <param name="str전체텍스트">전체선택되었을때 표기될 DisplayText</param>
+</member>
+<member name="M:NeoModule.ClsJinStation.sP_LoadluEditClass(System.Object@,System.Boolean)">
+ <summary>
+ 현재 사용중인 진료실들의 진료과목들 LookUpEdit 셋팅하기
+ RepositoryItem 으로 추가된 LookUpEdit용
+ </summary>
+ <param name="luR_Add">셋팅할 LookUpEdit 컨트롤</param>   
+</member>
+<member name="M:NeoModule.ClsJinStation.fP_Exists진료과목(System.String)">
+ <summary>
+ 진료과목 있는지 여부 체크
+ </summary>
+ <param name="strL_진료과목"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.ClsJinStation.fP_GetMemo과별초진(System.String,System.String,System.String)">
+ <summary>
+ 진료과목 별 신환인 경우 전달사항에 표기
+ </summary>
+ <param name="str챠트번호"></param>
+ <param name="str진료과목"></param>
+ <param name="str진료일자"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.ClsJinWard.fP_GetRstJinWardData(System.Int32)">
+ <summary>
+ 22/10/24 준혁 추가
+ </summary>
+ <param name="int입원ID"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.ClsJinWard.fP_Get심사상태(System.String)">
+ <summary>
+ 심사상태 가져오기. 없으면 넣어준다.
+ </summary>
+ <param name="str심사년월"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.ClsJinWard.fP_CheckWardIN(System.String)">
+ <summary>
+ 환자가 현재 입원중인지 체크
+ </summary>
+ <param name="str챠트번호"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.ClsJinWard.fP_Get산정특례부담율(NeoModule.mdlGlobal.ocsEnumSanSpc)">
+ <summary>
+ 산정특례 데이터 값을 실제 부담률로 반환
+ </summary>
+ <param name="sbyt산정특례"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.ClsJinWard.fP_Get환자전실리스트(System.Int32,System.String,System.Boolean)">
+ <summary>
+ 환자의 병실 이동 리스트 가져오기
+ </summary>
+ <param name="int입원ID">입원환자 입원ID</param>
+ <param name="str입실일자">입실일자</param>
+ <param name="useExpandoObject">리턴 객체 타입을 동적객체로 쓸지 clsCode로 가져올지</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.ClsJinWard.fP_GetComboStr병동(System.Boolean,System.Boolean)">
+ <summary>
+ 병동 콤보문자열 구해오기
+ </summary>
+ <param name="blnEmptyWard">빈 병실이 존재하는 병동만 가져올지 여부</param>
+ <param name="blnLookUpEdit">LookupEdit에 셋팅할 것인지 여부 True : 병동1;병동1|#병동2;병동2|#...병동5;병동5/ False : 병동1|#병동2|#...병동5 </param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.ClsJinWard.fP_GetComboStr병실(System.String,System.Boolean,System.Boolean,ADODB.Recordset)">
+ <summary>
+ 병동에 해당하는 병실 콤보문자열 구해오기
+ </summary>
+ <param name="str병동">병동 정보</param>
+ <param name="blnEmptyWard">빈 침대가 존재하는 병실만 가져올지 여부</param>
+ <param name="blnLookUpEdit">LookupEdit에 셋팅할 것인지 여부 True : 병실1;병실1|#병실2;병실2|#...병실5;병실5/ False : 병실1|#병실2|#...병실5 </param>
+ <param name="rst병동">특정 병동의 TB_병동정보 데이터가 담겨 있는 RecordSet. ※병동 셋팅할 때 Select을 여러번 하지 않고 병실 비어있는지 체크하기 위해 추가함.</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.ClsJinWard.fP_GetComboStr침대(System.String,System.String,System.Boolean,System.Boolean)">
+ <summary>
+ 병동,병실에 해당하는 침대 콤보문자열 구해오기
+ </summary>
+ <param name="str병동">병동 정보</param>
+ <param name="str병실">병실 정보</param>
+ <param name="blnEmptyWard">빈 침대만 가져올지 여부</param>
+ <param name="blnLookUpEdit">LookupEdit에 셋팅할 것인지 여부 True : 침대;침대|#침대2;침대2|#...침대5;침대5/ False : 침대1|#침대2|#...침대5 </param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.ClsJinWard.sP_CreateJinBaseUntilDate(System.String)">
+ <summary>
+ 일괄 입원연장 시키기.
+ </summary>
+ <param name="str연장일자">연장할 일자</param>
+</member>
+<member name="M:NeoModule.ClsJinWard.fP_SaveJinWard">
+ <summary>
+ 입원저장
+ </summary>    
+ <returns></returns>
+</member>
+<member name="M:NeoModule.ClsJinWard.fP_SaveWardState(NeoModule.mdlGlobal.ocsEnumWardState)">
+ <summary>
+ 입원상태 변경
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.ClsJinWard.fP_SaveJinBase입원퇴원일자(System.Int32)">
+ <summary>
+ 입퇴원일자 정보 추가 보완해주기
+ </summary>
+ <param name="int입원ID"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.ClsJinWard.fP_Save병실정보(System.String,System.String,System.Int32,System.String,System.String,System.String,System.String,System.Int32,System.Boolean)">
+ <summary>
+ 환자 병실 변경 정보 저장
+ </summary>
+ <param name="str병동명">변경할 병동</param>
+ <param name="str병실명">변경할 병실</param>
+ <param name="int침대번호">변경할 침대번호</param>
+ <param name="str입실일자">입실일자</param>
+ <param name="str입실시간">입실시간</param>
+ <param name="str처방코드"></param>
+ <param name="str자보23사유"></param>
+ <param name="bln격리병실적용"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.ClsJinWard.fP_Delete병실정보(System.Int32,System.String,System.String,System.String,System.Byte)">
+ <summary>
+ 환자 병실 정보 삭제
+ </summary>
+ <param name="int입원병동ID"></param>
+ <param name="str입실일시"></param>
+ <param name="str복귀병동"></param>
+ <param name="str복귀병실"></param>
+ <param name="byt복귀침대"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.ClsJinWard.fP_Save전과정보(System.Int32,System.String,System.String,System.String,System.String,System.String,System.Boolean)">
+ <summary>
+ 환자 전과 정보 저장
+ </summary>
+ <param name="int입원전과ID"></param>
+ <param name="str진료과목"></param>
+ <param name="str담당의사"></param>
+ <param name="str변경일자"></param>
+ <param name="str변경일시"></param>
+ <param name="str변경내용"></param>
+ <param name="bln접수정보반영">접수정보(입원정보,진료기본 등)에 변경된 전과정보 반영할지 여부(입원전과 데이터만 쌓고 싶을때 False)</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.ClsJinWard.fP_Update심사상태(NeoModule.mdlGlobal.ocsEnum심사상태,System.String)">
+ <summary>
+ 23/01/17 준혁 심사상태 저장 함수 추가
+ </summary>
+ <param name="str심사년월"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.ClsJinWard.fP_SaveJinWardSub">
+ <summary>
+ 입원정보Sub 테이블 저장
+ </summary>
+ <returns></returns>
+</member>
+<member name="T:NeoModule.clsJinwardSub">
+ <summary>
+ 유형변경 관련 클래스
+ </summary>
+</member>
+<member name="M:NeoModule.clsChart.fP_GetSelectQry(System.Boolean)">
+ <summary>
+ 인적사항 Select 쿼리문
+ </summary>
+ <param name="blnBohum">보험정보, 입원정보 같이 조인해서 가져올지 여부</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsChart.SearchChart(System.String,System.Boolean,System.Boolean,System.Boolean)">
+ <summary>
+ 챠트번호로 환자 검색하기
+ </summary>
+ <param name="str챠트번호">검색할 챠트번호</param>
+ <param name="blnGet가족정보">가족정보를 로드할지 여부</param>
+</member>
+<member name="M:NeoModule.clsChart.fG_IsChartNumber(System.String)">
+ <summary>
+ 클래스 선언없이 챠트번호 체크 함수
+ </summary>
+ <param name="strChartNumber"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsChart.sD_챠트백업">
+ <summary>
+ 챠트정보 백업하기
+ </summary>
+</member>
+<member name="M:NeoModule.clsChart.fP_GetAge(System.Boolean,System.String,System.String,System.String,System.Boolean,System.String)">
+ <summary>
+ 나이 가져오기
+ </summary>
+ <param name="bln요양병동">요양병동용 나이계산은 분리.</param>
+ <param name="str일일접미사">일수단위에 대한 접미사</param>
+ <param name="str개월접미사">개월단위에 대한 접미사</param>
+ <param name="blnDetail">나이 상세하게 표기할지 여부</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsChart.fP_GetAgeInt(System.Int32@,System.String,System.String)">
+ <summary>
+ 정수 나이(금액 계산용 나이)
+ </summary>    
+ <param name="intR_Get일수">주민등록번호 기준 오늘까지 일수 구해오기.</param>
+ <returns>나이</returns>
+</member>
+<member name="M:NeoModule.clsChart.fP_GetSex(System.Byte,System.String)">
+ <summary>
+ 성별 가져오기
+ </summary>
+ <param name="bytGubun">0:M/F 1:남/여</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsChart.fP_SetCallPatInfo(System.String,System.String,System.Boolean)">
+ <summary>
+ 진료실 환자 호출시 호출정보 갱신 
+ </summary>
+ <param name="strUserID">호출 사용자ID</param>
+ <param name="str챠트번호">챠트번호 </param>
+</member>
+<member name="M:NeoModule.clsChart.fP_GetCallPatInfo(System.String,System.String@)">
+ <summary>
+ 21/09/27 준혁 사용자id, 사용자시간 가져오는 함수 추가
+ 이미 호출 된 clschart 데이터가 아닌 실시간으로 가져오기 위해 함수 따로 뺌
+ </summary>
+ <param name="str챠트번호"></param>
+ <param name="strUserTime"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsChart.fP_SaveJinDateLast(System.String)">
+ <summary>
+ 처음내원일/마지막내원일 갱신하기
+ </summary>
+ <param name="strChartNumber">챠트번호</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsChart.fP_GetJinChoJaeKind(System.String,NeoModule.mdlGlobal.ocsEnumBohumKind,System.String,System.String)">
+ <summary>
+ 환자 초재진 구분 구해오기
+ </summary>    
+ <param name="en보험구분"></param>
+ <param name="strDate">접수일자</param>            
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsChart.fP_SameBohumKind(NeoModule.mdlGlobal.ocsEnumBohumKind)">
+ <summary>
+ 같은 취급 당하는 보험구분 정리
+ </summary>
+ <param name="en보험구분"></param>
+ <returns>0: 일반, 공단, 급여, 공단보인, 계약/ 1: 자보, 자보본인/ 2:산재, 산재본인/ 3: 계약/ 4: 기타</returns>
+</member>
+<member name="M:NeoModule.clsChart.fP_GetChartAgeLevel(System.String)">
+ <summary>
+ 현재 환자 오늘 날짜기준으로 나이 기준 반환
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsChart.fP_GetNightKong(System.String,System.String)">
+ <summary>
+ 야간공휴 구분 구해오기
+ </summary>
+ <param name="strDate"></param>
+ <param name="strTime"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsChart.fP_GetTestName">
+ <summary>
+ 22/03/14 준혁 테스트용환자 수진자명 받아오기
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsChart.fP_GetNewChartNumber(System.Boolean)">
+ <summary>
+ 신규 챠트번호 따오기
+ </summary>
+ <returns></returns> 
+</member>
+<member name="M:NeoModule.clsChart.fP_GetJohapInfo(System.String)">
+ <summary>
+ 사업장기호 관련 정보 가져오는 함수
+ </summary>
+ <param name="strJohapCode"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsChart.fP_IsChartNumberExist(System.String,System.String@)">
+ <summary>
+ 챠트번호가 이미 존재하는지 체크
+ </summary>
+ <param name="strChartnumber"></param>
+ <param name="strR_GetChartName">이미 존재하는 챠트번호일 경우 기존 챠트의 이름 넣어줌.</param>
+ <returns>있을 경우 True/없으면 False</returns>
+</member>
+<member name="M:NeoModule.clsChart.fP_Get미수금">
+ <summary>
+ 영수증 테이블에서 환자 미수금 가져오기
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsChart.fP_UpdateAfterJubsu(NeoModule.clsJinBase)">
+ <summary>
+ 접수 후 인적정보에 넣어줘야하는 부분들 처리
+ </summary>
+ <param name="_clsJinBase">접수한 jinbase</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsChart.fP_Get몸무게(System.String,System.Boolean)">
+ <summary>
+ 현재 환자 진료일자 기준으로 최근 등록된 바이탈 몸무게 반환. 입력된게 없을경우 0 반환
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsChart.fP_GetEDC(System.String)">
+ <summary>
+ EDC구하기
+ </summary>
+ <param name="strDate"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsChart.sP_Load환자처방금지">
+ <summary>
+ 현재 환자 처방금지목록 가져오기
+ </summary>
+</member>
+<member name="M:NeoModule.clsChart.sP_InitSpr처방금지(FarPoint.Win.Spread.FpSpread@)">
+ <summary>
+ 처방금지 스프레드 초기화
+ </summary>
+ <param name="sprR_처방금지"></param>
+</member>
+<member name="M:NeoModule.clsChart.sP_LoadSpr처방금지(FarPoint.Win.Spread.FpSpread@)">
+ <summary>
+ 처방금지 스프레드 뿌려주기
+ </summary>
+ <param name="sprR_처방금지">뿌려줄 스프레드</param>
+</member>
+<member name="M:NeoModule.clsChart.fP_Save처방금지(System.String,System.String,System.Boolean,System.String)">
+ <summary>
+ 처방금지 목록 추가
+ </summary>
+ <param name="str처방코드">처방코드</param>
+ <param name="str금지메모">금지메모</param>
+ <param name="bln질의여부">질의여부</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsChart.fP_Del처방금지(System.Int32)">
+ <summary>
+ 처방금지 목록 삭제
+ </summary>
+ <param name="int처방금지ID"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsChart.sP_LoadJohapData(System.String,NeoModule.mdlGlobal.ocsEnumBohumKind)">
+ <summary>
+ 보험정보 로드하기
+ </summary>    
+</member>
+<member name="P:NeoModule.clsChart.m보험RecentItem(NeoModule.mdlGlobal.ocsEnumBohumKind,System.String,System.Boolean)">
+ <summary>
+ 최근 해당 보험유형의 보험정보 가져오기
+ </summary>
+ <param name="BohumKind"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsChart.sP_LoadFamilyInfo">
+ <summary>
+ 가족정보 로드하기
+ </summary>
+</member>
+<member name="M:NeoModule.clsChart.sP_InitSprFamily(FarPoint.Win.Spread.FpSpread@)">
+ <summary>
+ 가족 리스트 스프레드 초기화
+ </summary>
+ <param name="sprR_가족챠트"></param>
+</member>
+<member name="M:NeoModule.clsChart.sP_LoadSprFamily(FarPoint.Win.Spread.FpSpread@)">
+ <summary>
+ 가족 리스트 스프레드 넘겨주면 뿌려줌~
+ </summary>
+ <param name="sprR_가족챠트">뿌려줄 스프레드</param>
+</member>
+<member name="M:NeoModule.clsChartVitalBase.CalcLMSPercent(System.String,System.Int16,System.Byte,System.Byte,System.Byte)">
+ <summary>
+ LMS 계측 수치 반영 ( 기본바이탈에서만 사용 )
+ </summary>
+ <param name="Gender"></param>
+ <param name="Months"></param>
+ <param name="bytH"></param>
+ <param name="bytW"></param>
+ <param name="bytC"></param>
+</member>
+<member name="M:NeoModule.clsMedicalRecord.fP_LogLenCheck(NeoModule.mdlGlobal.Log실행파일구분,System.String,System.String,NeoModule.mdlGlobal.OcsEnumJinIOGbn,System.String,System.String,System.String,System.String,NeoModule.mdlGlobal.Log실행구분)">
+ <summary>
+ 상세정보 내용이 500Byte가 넘을 경우 배열화 해서 넣어준다.
+ </summary>
+ <param name="실행파일구분"></param>
+ <param name="str실행정보"></param>
+ <param name="str상세정보"></param>
+ <param name="외래구분"></param>
+ <param name="str챠트번호"></param>
+ <param name="str진료일자"></param>
+ <param name="str열람사유"></param>
+</member>
+<member name="T:NeoModule.clsReceipt">
+ <summary>
+ 영수증 관리 클래스
+ </summary>
+</member>
+<member name="M:NeoModule.clsReceipt.fG_Clear(NeoModule.clsJinBase,NeoModule.clsChart)">
+ <summary>
+ 클리어함수
+ </summary>
+ <param name="sJinbase"></param>
+ <param name="sWorkChart"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsReceipt.sD_Set예방접종상환액">
+ <summary>
+ 예방접종 상환금액 가져오는 함수
+ </summary>
+</member>
+<member name="M:NeoModule.clsReceipt.fG_GetReceiptJinbase(NeoModule.clsJinBase)">
+ <summary>
+ 넘겨받은 jinbase 기준으로 영수증 데이터 레코드셋 가져오는 함수
+ </summary>
+ <param name="clsV_Jinbase"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsReceipt.fG_GetReceiptRst(System.String,System.Boolean)">
+ <summary>
+ 영수증 데이터 레코드셋 가져오는 함수
+ </summary>
+ <param name="strV_AddQuery">WHERE 포함 조건문</param>
+ <param name="blnP_Kiosk">키오스크영수증 여부</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsReceipt.fG_DeleteReceiptRst(System.Int32,ADODB.Recordset)">
+ <summary>
+ 영수증 삭제 함수
+ 영수증ID가 있을 경우 해당 영수증만 삭제
+ 영수증ID = 0, RecordSet 보낼 경우 roop돌면서 삭제
+ </summary>
+ <param name="lngV_영수증ID"></param>
+ <param name="sRst"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsReceipt.fD_Get교부번호">
+ <summary>
+ 교부번호 가져오는 함수
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsReceipt.fG_SetVariableRst(ADODB.Recordset)">
+ <summary>
+ 변수에 영수증 데이터 넣어주는 함수
+ </summary>
+ <param name="Rst">영수증 Rst</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsReceipt.fG_SaveDataReceipt(System.String,System.Boolean)">
+ <summary>
+ 영수증 저장 함수
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsReceipt.fG_Save선수금">
+ <summary>
+ 선수금 저장하는 함수
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsReceipt.fG_Update현금영수증(System.Int32,System.Int32,System.String,System.String,System.String,System.Byte)">
+ <summary>
+ 현금영수증 승인 시 영수증에 현금영수증관련 필드 update
+ </summary>
+ <param name="intV_영수증ID"></param>
+ <param name="intV_현금영수수납액"></param>
+ <param name="strV_현금영수거래구분"></param>
+ <param name="strV_현금영수신분확인"></param>
+ <param name="strV_현금영수승인번호"></param>
+ <param name="bytV_현금영수구분"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsReceipt.fG_Update현금영수증_마감정보(System.Int32)">
+ <summary>
+ 마감 된 영수증 현금영수증 처리할경우 집계정보 바꿔주는 함수
+ </summary>
+ <param name="intV_수납집계ID"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.ClsSangMng.fP_FindSangCodeName(System.String,System.String)">
+ <summary>
+ 상병코드 + 한글명칭으로 검색하기
+ </summary>
+ <param name="strCode">상병코드</param>
+ <param name="strName">한글명칭</param>
+ <returns></returns>
+</member>
+<member name="T:NeoModule.clsSpreadMng">
+ <summary>
+ Spread 관리 클래스 -> Column 이동, 숨기기/ 마지막값 기억 등을 관리.
+ </summary>
+</member>
+<member name="M:NeoModule.clsSpreadMng.sP_Initalize(FarPoint.Win.Spread.FpSpread@,System.String,System.Boolean,System.Boolean,System.Boolean)">
+ <summary>
+ 스프레드, 구분 등 초기화
+ </summary>
+ <param name="sprR_ColMove"></param>
+ <param name="str구분">ini저장 구분을 위한 구분값.</param>    
+</member>
+<member name="M:NeoModule.clsSpreadMng.AddHiddenFixColumn(System.String)">
+ <summary>
+ 무조건 Hidden 고정인 Column 추가 
+ </summary>
+ <param name="strTitle">컬럼 헤더값</param>
+</member>
+<member name="M:NeoModule.clsSpreadMng.IsExistsHiddenColumn(System.String)">
+ <summary>
+ 컬럼이 Hidden 리스트에 있는지 체크
+ </summary>
+ <param name="strTitle"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsSpreadMng.AddVisibleFixColumn(System.String)">
+ <summary>
+ VisibleFix 컬럼 추가
+ </summary>
+ <param name="strTitle"></param>
+</member>
+<member name="M:NeoModule.clsSpreadMng.IsExistsVisibleColumn(System.String)">
+ <summary>
+ 컬럼이 VisibleFix 리스트에 있는지 체크
+ </summary>
+ <param name="strTitle"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsSpreadMng.sD_SaveINI(System.Int32,System.Boolean)">
+ <summary>
+ INI에 Spread 저장하기
+ </summary>
+ <param name="intCol">저장할 Column정보. -1 : 전체 Column 저장</param>
+</member>
+<member name="M:NeoModule.clsSpreadMng.fD_GetColumnHeaderText(System.Int32)">
+ <summary>
+ 헤더 텍스트 가져오기. 헤더가 2줄일 경우 첫째줄 + 둘째줄을 합쳐서 반환.
+ </summary>
+ <param name="intCol">Column index.</param>
+ <returns>헤더 텍스트.</returns>
+</member>
+<member name="M:NeoModule.clsSpreadMng.fP_SetSprCol(FarPoint.Win.Spread.FpSpread@,System.Int32,System.String,System.String,System.Boolean,System.Object,System.Int32,FarPoint.Win.Spread.CellHorizontalAlignment,FarPoint.Win.Spread.CellVerticalAlignment,NeoModule.clsSpreadMng.enColumnVisible,System.Boolean)">
+ <summary>
+ INI에 저장된 Column 정보와 매핑 후 SetSprCol 함수 진행하는 함수. 인자들은 SetSprCol에서 그대로 사용.
+ </summary>
+ <param name="sprR_Set"></param>
+ <param name="intCol"></param>
+ <param name="strHeader"></param>
+ <param name="strDataField"></param>
+ <param name="blnVisible"></param>
+ <param name="objCellType"></param>
+ <param name="intWidth"></param>
+ <param name="HAlign"></param>
+ <param name="VAlign"></param>
+ <param name="ColumnVisible ">일반 / 고정 Hidden / 고정 View 컬럼 지정</param>
+ <param name="blnUseSort">Sort를 사용하는 Column인지 여부.</param>
+ <returns>ini에 저장되어 있는 Column</returns>
+</member>
+<member name="M:NeoModule.clsSpreadMng.Spread_ColumnDragMoveCompleted(System.Object,FarPoint.Win.Spread.DragMoveCompletedEventArgs)">
+ <summary>
+ Column Move 완료 이벤트
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:NeoModule.clsSpreadMng.Spread_ColumnWidthChanged(System.Object,FarPoint.Win.Spread.ColumnWidthChangedEventArgs)">
+ <summary>
+ 넓이 변경 이벤트
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:NeoModule.clsSpreadMng.Spread_CellClick(System.Object,FarPoint.Win.Spread.CellClickEventArgs)">
+ <summary>
+ 우클릭 하여 숨기기 기능
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:NeoModule.ClsSugaMng.FindSugaCode(System.String,System.String,NeoModule.ClsSugaMng.ocsEnumSugaCodeFindKind,System.Boolean)">
+ <summary>
+ 처방코드 검색
+ </summary>
+ <param name="strFind">검색어</param>
+ <param name="strThisDate">적용일자</param>
+ <param name="FindKind">검색 조건</param>
+ <param name="blnOnlyCode">단가정보 로드할지 여부</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.ClsSugaMng.fP_GetSugaOption(System.String,System.String)">
+ <summary>
+ 처방코드기준으로 원하는 처방코드 옵션 가져옴
+ </summary>
+ <param name="strL_SugaCode">처방코드</param>
+ <param name="strR_FieldsName">필드이름</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.ClsSugaMng.fP_GetSelectQry(NeoModule.ClsSugaMng.ocsEnumSugaCodeFindKind,System.String,System.String,System.Boolean,System.String,System.String)">
+ <summary>
+ 처방코드 쿼리문
+ </summary>
+ <param name="FindKind">조회 종류</param>
+ <param name="strFind"></param>    
+ <returns></returns>
+</member>
+<member name="M:NeoModule.ClsSugaMng.sP_SetAutoSugaCode(System.String,System.String,System.String,System.String,System.Byte)">
+ <summary>
+ 마스터 수가를 병원코드로 등록할 때 기본 항목구분 등의 셋팅하기.
+ </summary>
+ <param name="strSugaCode"></param>
+ <param name="str한글명칭"></param>
+ <param name="str산정코드명칭"></param>
+ <param name="str분류번호"></param>
+ <param name="byt행위구분"></param>
+</member>
+<member name="M:NeoModule.ClsSugaMng.IsSameSugaCode(System.Int64,System.String)">
+ <summary>
+ 처방코드가 있는지 검사
+ Return 0 :없음, 1 : 처방코드가 같음, 2 : 청구코드가 같음
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:NeoModule.ClsWorkUser.item(System.String)">
+ <summary>
+ 사용자ID로 사용자정보 가져오기.
+ </summary>
+ <param name="strUserID">사용자 ID</param>
+ <returns>Code 클래스 반환. Code = 사용자ID, Value = 상태, Name = 이름, Data1 = 직분, Data2 = 진료지원코드, Data3 = 면허번호, Data4 = 진료지원구분</returns>
+</member>
+<member name="P:NeoModule.ClsWorkUser.item(System.Int32)">
+ <summary>
+ List 인덱스로 사용자정보 가져오기.
+ </summary>
+ <param name="Index">List의 인덱스</param>
+ <returns>Code 클래스 반환. Code = 사용자ID, Value = 상태, Name = 이름, Data1 = 직분, Data2 = 진료지원코드, Data3 = 면허번호, Data4 = 진료지원구분</returns>
+</member>
+<member name="P:NeoModule.ClsWorkUser.item(System.String,System.String)">
+ <summary>
+ 사용자 이름 + 면허번호로 사용자정보 가져오기.
+ </summary>
+ <param name="strUserName">이름</param>
+ <param name="strLicenseNumber">면허번호</param>
+ <returns>Code 클래스 반환. Code = 사용자ID, Value = 상태, Name = 이름, Data1 = 직분, Data2 = 진료지원코드, Data3 = 면허번호, Data4 = 진료지원구분</returns>
+</member>
+<member name="P:NeoModule.ClsWorkUser.GetUserTransDepart(System.String,System.String)">
+ <summary>
+ 22/11/24 사용자정보 전달부서 가져오는 함수 추가
+ </summary>
+ <param name="strUserID"></param>
+ <param name="str부서">"진료실", "병동"</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.ClsWorkUser.fP_UserLogin(System.String,System.String)">
+ <summary>
+ 사용자 로그인 하기
+ </summary>
+ <param name="strR_UserID">사용자 ID</param>
+ <param name="strR_UserPWD">사용자 Pwd or TMZPDLFDJQ</param>
+ <returns></returns>
+ 
+</member>
+<member name="M:NeoModule.ClsWorkUser.fP_GetQuery(System.String)">
+ <summary>
+ TB_사용자정보 테이블 Select 쿼리 반환 함수.
+ </summary>
+ <param name="mAddSQL">추가 조건문. Where절 포함하여 전달할 것. </param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.ClsWorkUser.fP_SaveUserInfo">
+ <summary>
+ 21/06/17 준혁 사용자정보 저장하는 함수 추가
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.ClsWorkUser.sP_LoadUserList(System.Byte,System.Boolean)">
+ <summary>
+ UserList 새로고침 하기.
+ </summary>
+ <param name="bytR_정렬">0 : Order By 상태, 사용자ID / 1 : Order By 상태, 진료지원코드, 사용자ID </param>
+ <param name="blnR_퇴사자제외">퇴사자를 제외할지 여부</param>
+</member>
+<member name="M:NeoModule.ClsWorkUser.sP_LoadluEdit(System.Object@,System.String,System.Boolean,System.String,System.Boolean,System.String,System.String)">
+ <summary>
+ 특정 지원구분의 진료지원실 LookUpEdit 셋팅하기 
+ BarManager 에 들어가는 RepositoryItem 용
+ </summary>
+ <param name="luR_Add">셋팅할 LookUpEdit 컨트롤</param>
+ <param name="str직분">셋팅할 직분 ,(conG_열거)를 구분자로 전달. 끝자리의 ,는 지우지 말 것. Ex) 직분1,직분2,...직분7,</param>
+ <param name="bln전체여부">아이템에 전체 아이템 추가 여부</param>
+ <param name="bln퇴사제외">사용자 리스트중 퇴사한 사람은 제외 ( 기본값: 제외(True) )</param>
+ <param name="strJinStationCode">셋팅할 진료지원코드, 직분옵션과 사용법이 같음  Ex) 지원코드1,지원코드2,...지원코드7,</param>
+ <param name="strJinStationPart">셋팅할 진료지원구분, 직분옵션과 사용법이 같음  Ex) 지원구분1,지원구분2,...지원구분7,</param>
+</member>
+<member name="M:NeoModule.ClsWorkUser.sP_LoadluEdit_Doctor(DevExpress.XtraEditors.LookUpEdit@)">
+ <summary>
+ 의사 리스트 LookUpEdit 셋팅하기
+ </summary>
+ <param name="luR_Add">셋팅할 LookUpEdit 컨트롤</param>
+</member>
+<member name="M:NeoModule.ClsWorkUser.sP_LoadluEdit_Doctor(System.Object@)">
+ <summary>
+ 의사 리스트 LookUpEdit 셋팅하기
+ RepositoryItem에 추가되는 LookUpEdit 용
+ </summary>
+ <param name="luR_Add">셋팅할 LookUpEdit 컨트롤</param>
+</member>
+<member name="M:NeoModule.ClsWorkUser.sP_LoadCheckComboEdit(System.Object@,System.String,System.Boolean,System.String,System.Boolean)">
+ <summary>
+ 특정 지원구분의 진료지원실 CheckedComboBoxEdit 셋팅하기
+ </summary>
+ <param name="checkedComboR_Add">셋팅할 CheckedComboBoxEdit 컨트롤</param>    
+ <param name="bln전체여부">전체 진료실을 표기할지 여부</param>    
+ <param name="str전체텍스트">전체선택되었을때 표기될 DisplayText</param>
+</member>
+<member name="M:NeoModule.ClsWorkUser.fP_GetIsPosition(NeoModule.mdlGlobal.ocsEnumUserPosition,NeoModule.ClsWorkUser.enSpecialList,System.String@)">
+ <summary>
+ 20/08/20 준혁
+ 약사여부 및 각종 전문의 여부를 가져오는 함수
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.clsZip.UnzipToFolder(System.String,System.String,System.Boolean)">
+ <summary>
+ 
+ </summary>
+ <param name="sFolderName">압축 풀 폴더</param>
+ <param name="ZipName">압축 풀 압축파일이름</param>
+ <param name="FileDelete">압축 푼 후 zip 파일을 삭제할건지 여부</param>
+ <returns></returns>
+</member>
+<member name="T:NeoModule.cls개별계산코드">
+ <summary>
+ 22/05/25 준혁 고시 등 본인부담률 달리하여 계산되는 코드 관리 클래스
+ </summary>
+</member>
+<member name="M:NeoModule.Cls권한.sD_Clear">
+ <summary>
+ 초기 권한 셋팅(디폴트)
+ </summary>
+</member>
+<member name="M:NeoModule.cls똑닥.sP_ShowAdminPage">
+ <summary>
+ 똑닥 관리자페이지 실행
+ </summary>
+</member>
+<member name="M:NeoModule.cls똑닥.fP_내원처리(NeoModule.clsChart@,NeoModule.clsJinBase@,System.Boolean)">
+ <summary>
+ 예약/접수 내원처리 진행.
+ </summary>
+ <param name="_clsChart"></param>
+ <param name="_clsJinbase"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.cls똑닥.fP_내원취소(NeoModule.clsChart@,NeoModule.clsJinBase@)">
+ <summary>
+ 접수 내원취소 처리 진행.
+ </summary>
+ <param name="_clsChart"></param>
+ <param name="_clsJinbase"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.cls똑닥.sP_진료완료(NeoModule.clsJinBase)">
+ <summary>
+ 진료 완료처리할 때 똑닥 관련 완료처리.
+ </summary>
+ <param name="CurrJinBase"></param>
+</member>
+<member name="M:NeoModule.cls똑닥.fP_Check중복환자(System.String,System.String,System.String)">
+ <summary>
+ 기존에 있던 환자인지 체크
+ </summary>
+ <param name="str수진자명"></param>
+ <param name="str정보번호"></param>
+ <param name="str챠트번호"></param>
+ <returns>있다 : True/ 없다 : False</returns>
+</member>
+<member name="M:NeoModule.cls똑닥.fP_GetTimeFromUTC(System.String,System.String)">
+ <summary>
+ 똑닥에서 주는 시간은 쓸데없이 그리니치 천문대 기준(UTC)으로 넘겨준다. 국내에서만 서비스 하는데 굳이 저렇게 넘겨줌.. 노이해, 짜증 
+ 무튼 한국시간으로 계산하기 위해서 + 9:00 해줌.
+ </summary>
+ <param name="strDateTime"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.cls똑닥.fP_일감완료(System.String,System.Boolean,System.String)">
+ <summary>
+ 똑닥 일감 완료처리하기
+ </summary>
+ <param name="str일감ID">완료처리할 일감ID</param>
+ <param name="blnCheck">현재 일감목록에 ID에 일치하는게 있는지 체크</param>
+ <param name="strService">일감목록 체크시 서비스종류 체크 - 예약:RESERVATION /접수:RECEIPT </param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.cls똑닥.sP_SetReserveCount(System.String,System.String,System.String)">
+ <summary>
+ 똑닥 서버에 오프라인 예약(챠트에서 예약한 것)정보 넘겨주기
+ </summary>
+ <param name="str진료실코드"></param>
+ <param name="str진료일자"></param>
+ <param name="str진료시간"></param>
+</member>
+<member name="M:NeoModule.cls본인부담률.sP_Clear(NeoModule.mdlGlobal.ocsEnumBohumKind,NeoModule.mdlGlobal.OcsEnumJinIOGbn,NeoModule.mdlGlobal.ocsEnum공상구분,System.String,NeoModule.mdlGlobal.ocsEnumChartAgeLevel,NeoModule.mdlGlobal.ocsEnumProtectKind,System.String)">
+ <summary>
+ 클리어함수 -> Set본인부담률 부분에서 알아서 호출해줌
+ 항목외정률, 특수장비 본인부담률은 병원종별에 따라 먼저 기본세팅해줌
+ </summary>
+ <param name="enV_보험종별"></param>
+ <param name="enV_외래구분"></param>
+ <param name="enV_공상구분"></param>
+ <param name="strV_특정기호"></param>
+ <param name="enV_나이구분"></param>
+</member>
+<member name="M:NeoModule.cls본인부담률.sG_Load본인부담률">
+ <summary>
+ 프로그램 실행 시 최초1번 호출 필요
+ </summary>
+</member>
+<member name="M:NeoModule.cls본인부담률.fG_Set본인부담률(System.String,NeoModule.mdlGlobal.ocsEnumBohumKind,NeoModule.mdlGlobal.ocsEnum공상구분,NeoModule.mdlGlobal.ocsEnumChartAgeLevel,System.String,NeoModule.mdlGlobal.OcsEnumJinIOGbn,System.Boolean,NeoModule.mdlGlobal.ocsEnumProtectKind,System.String,System.Int32,System.String@)">
+ <summary>
+ 환자계산 전 본인부담률 세팅해주는 함수.
+ A~E항 정률의 경우 본인부담률 고정.
+ ● Parameter : 적용일자, 보험종별, 공상등구분(차상위구분), 환자구분(나이구분), 특정기호, DRG여부, 본인부담기호(의료급여)
+ 본인부담률 테이블에 데이터가 있는 경우 True / 없는경우 False 반환
+ </summary>
+ <param name="strV_적용일자">환자 계산일자 : String</param>
+ <param name="enV_보험종별">환자 보험종별 : ocsEnumBohumKind</param>
+ <param name="enV_공상등구분">차상위 등 공상구분 : ocsEnum공상구분</param>
+ <param name="enV_환자구분">환자 나이구분 : ocsEnumChartAgeLevel</param>
+ <param name="strV_특정기호">환자 특정기호 : String</param>
+ <param name="blnV_DRG">DRG여부 : Boolean</param>
+</member>
+<member name="T:NeoModule.cls자격조회">
+ <summary>
+ M1 : 자격검증
+ M2 : 자격검증 결과
+ M3 : 진료확인
+ M4 : 진료확인 결과
+ M5 : 진료확인 취소
+ M6 : 진료확인 취소 결과
+ 
+ </summary>
+</member>
+<member name="M:NeoModule.cls자격조회.fP_자격검증송신M1(System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ M1 : 자격검증 송신
+ </summary>
+ <param name="str이름">환자이름</param>
+ <param name="str주민번호">환자 주민번호</param>
+ <param name="str보험증번호">보험증번호</param>
+ <param name="str생일">생일(YYMMDD)</param>
+ <param name="str조회일자">조회일자</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.cls자격조회.fP_자격검증수신M2(System.Int16,System.String)">
+ <summary>
+ M2 : 자격검증결과 수신
+ </summary>
+ <param name="shrtSeq"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.cls전자인증.sP_Add(NeoModule.mdlGlobal.ocsEnum전자인증구분,System.String,System.String,System.String,System.Boolean,System.Int32,System.Int64)">
+ <summary>
+ 전자인증 데이터를 List에 추가함
+ ''' 키값 양식 ( ^ : 구분자 )
+ 공통 : 진료년^진료월^진료일^챠트번호
+ 진료기록지 : 공통양식^진료번호(^IO구분 : EPLUS)
+ 간호기록지 : 공통양식^작성자ID
+ 수술기록지 : 공통양식
+ 분만기록지 : 공통양식
+ 수납기록지 : 공통양식^(IO구분 : EPLUS)
+ 물리치료대장 : 공통양식^진료번호
+ 진단서 : 공통양식  (미구현)
+ 문서 : 공통양식^문서인덱스 (미구현)
+ 바이탈 : 공통양식^작성자ID^바이탈코드
+ </summary>
+ <param name="en인증구분">인증기록지구분</param>
+ <param name="str인증일자">인증일자 (YYYY-MM-DD) </param>
+ <param name="str챠트번호"></param>
+ <param name="str작성자ID"></param>
+ <param name="blnSave">추가와 동시에 저장할때 True</param>
+ <param name="int진료번호"></param>
+ <param name="lng바이탈코드"></param>
+</member>
+<member name="M:NeoModule.cls전자인증.sP_Add(NeoModule.mdlGlobal.ocsEnum전자인증구분,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Int32,System.Int64)">
+ <summary>
+ 전자인증 데이터를 List에 추가함
+ ''' 키값 양식 ( ^ : 구분자 )
+ 공통 : 진료년^진료월^진료일^챠트번호
+ 진료기록지 : 공통양식^진료번호(^IO구분 : EPLUS)
+ 간호기록지 : 공통양식^작성자ID
+ 수술기록지 : 공통양식
+ 분만기록지 : 공통양식
+ 수납기록지 : 공통양식^(IO구분 : EPLUS)
+ 물리치료대장 : 공통양식^진료번호
+ 진단서 : 공통양식  (미구현)
+ 문서 : 공통양식^문서인덱스 (미구현)
+ 바이탈 : 공통양식^작성자ID^바이탈코드
+ </summary>
+ <param name="en인증구분">인증기록지구분</param>
+ <param name="str인증년">인증년 (YYYY) </param>
+ <param name="str인증월">인증월 (MM) </param>
+ <param name="str인증일">인증일 (DD) </param>
+ <param name="str챠트번호"></param>
+ <param name="str작성자ID"></param>
+ <param name="blnSave">추가와 동시에 저장할때 True</param>
+ <param name="int진료번호"></param>
+ <param name="lng바이탈코드"></param>
+</member>
+<member name="M:NeoModule.cls전자인증.sD_ClearBackGroundWork">
+ <summary>
+ 안바쁜 워커들 제거
+ </summary>
+</member>
+<member name="P:NeoModule.cls전자인증.cls전자인증Info.인증키">
+ <summary>
+ 키값 양식 ( ^ : 구분자 )
+ 공통 : 진료년^진료월^진료일^챠트번호
+ 진료기록지 : 공통양식^진료번호(^IO구분 : EPLUS)
+ 간호기록지 : 공통양식^작성자ID
+ 수술기록지 : 공통양식
+ 분만기록지 : 공통양식
+ 수납기록지 : 공통양식^(IO구분 : EPLUS)
+ 물리치료대장 : 공통양식^진료번호
+ 진단서 : 공통양식  (미구현)
+ 문서 : 공통양식^문서인덱스 (미구현)
+ 바이탈 : 공통양식^작성자ID^바이탈코드
+ </summary>
+</member>
+<member name="F:NeoModule.cls환경설정.m나이표기방법">
+ <summary>
+ 비급여/전액본인 의약품관리료
+0 = 산정안함
+1 = 내복약 비급여,전액본인 처방 시 산정
+2 = 외용약 전액본인 처방 시 전액본인 산정
+3 = 주사제 전액본인 처방 시 전액본인 산정
+4 = 주사제 전액본인 처방 시 급여 산정
+ </summary>
+</member>
+<member name="M:NeoModule.xfrmReportSpread.sD_WidthCheck">
+ <summary>
+ 가로/세로 변경시에 넓이 조절컬럼이 지정된게 있으면 넓이 조절해주기
+ </summary>
+</member>
+<member name="M:NeoModule.xfrmReportSpread.sprPreview_PrintDocument(System.Object,FarPoint.Win.Spread.PrintDocumentEventArgs)">
+ <summary>
+ 프린터 출력다 되면 종료 처리.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:NeoModule.xfrm기타메모.sD_DeleteMemo">
+ <summary>
+ 22/10/24 준혁 추가
+ </summary>
+</member>
+<member name="M:NeoModule.xfrm기타메모.sD_AppendMessage(System.String,System.Boolean)">
+ <summary>
+ 전달받은 메모 입력해주기
+ </summary>
+ <param name="strMessage">전달받은 메모</param>
+</member>
+<member name="M:NeoModule.xfrm기타메모2.sD_LoadData(System.String)">
+ <summary>
+ 환자 메모 로드 
+ </summary>
+ <param name="strChartNum">챠트번호</param>
+</member>
+<member name="M:NeoModule.xfrm기타메모2.sD_RenderData">
+ <summary>
+ 기타메모를 각탭의 메모종류ID에 맞게 뿌려주기
+ </summary>
+</member>
+<member name="M:NeoModule.xfrm기타메모2.sD_AppendMessage(System.String,System.Boolean)">
+ <summary>
+ 전달받은 메모 입력해주기
+ </summary>
+ <param name="strMessage">전달받은 메모</param>
+</member>
+<member name="M:NeoModule.xfrm기타메모2.sD_SaveMemo(System.Boolean,NeoModule.clsMemoLib,System.Boolean)">
+ <summary>
+ 기타 메모 저장
+ 이 프로시저는 외부에서 호출받았을때 작동
+ </summary>
+</member>
+<member name="T:NeoModule.xfrm기타메모2.clsRtfFontController">
+ <summary>
+ RichTextBox 폰트 컨트롤 클래스
+ </summary>
+</member>
+<member name="M:NeoModule.xfrm기타메모2.clsRtfFontController.fD_GetFontDetail">
+ <summary>
+ 선택된 항목의 글꼴 반환
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.xfrm기타메모2.clsRtfFontController.sD_UpdateFontBar">
+ <summary>
+ 현재 커서 혹은 선택된 글꼴을 폰트툴바에 반영
+ </summary>
+</member>
+<member name="M:NeoModule.xfrm기타메모2.clsRtfFontController.ChangeFontStyle(System.Drawing.FontStyle,System.Boolean)">
+ <summary>
+ 폰트 스타일 변경
+ </summary>
+ <param name="Style">폰트 스타일 (Bold, Italic, Underline)</param>
+ <param name="isAdd">추가/제거</param>
+</member>
+<member name="M:NeoModule.xfrm기타메모2.clsRtfFontController.ChangeFontSize(System.Single)">
+ <summary>
+ 폰트 사이즈 변경
+ </summary>
+ <param name="Size">폰트 크기</param>
+</member>
+<member name="M:NeoModule.xfrm기타메모2.clsRtfFontController.ChangeFontColor(System.Drawing.Color)">
+ <summary>
+ 폰트 색상 변경
+ </summary>
+ <param name="newColor">선택 색상</param>
+</member>
+<member name="M:NeoModule.xfrm달력.sD_InitControl">
+ <summary>
+ 폼 컨트롤 초기화
+ </summary>
+</member>
+<member name="M:NeoModule.xfrm달력.sD_InitView">
+ <summary>
+ 달력 뷰 형식 설정
+ </summary>
+</member>
+<member name="M:NeoModule.xfrm달력.sD_SelectDay(System.String,System.Boolean)">
+ <summary>
+ 해당 날짜 선택해주기
+ </summary>
+ <param name="strDate">날짜</param>
+</member>
+<member name="M:NeoModule.xfrm달력.sP_ChangeDay(System.String,System.Byte)">
+ <summary>
+ 달력 날짜 변경
+ </summary>
+ <param name="strDate">변경된 날짜</param>
+</member>
+<member name="M:NeoModule.xfrm달력.GetDayRow(FarPoint.Win.Spread.FpSpread,System.String,System.Int32@,System.Int32@)">
+ <summary>
+ 날짜로 Row, Col 구하기
+ </summary>
+ <param name="rSprCalendar">달력 스프레드</param>
+ <param name="sDay">날짜</param>
+ <param name="rRow">Row 값을 받을 변수</param>
+ <param name="rCol">Col 값을 받을 변수</param>
+</member>
+<member name="M:NeoModule.xfrm달력.sP_LoadCalander">
+ <summary>
+ 환자 진료기본으로 달력에 데이터 뿌리기
+ </summary>
+</member>
+<member name="M:NeoModule.xfrm달력.sD_SetQuickMonthView">
+ <summary>
+ 상단 월 툴바에 진료기본있는 월 색상 표기
+ </summary>
+</member>
+<member name="M:NeoModule.xfrm달력.sD_CheckQuickMonth(System.String)">
+ <summary>
+ 상단 월 툴바에 현재 선택된 월 표기
+ </summary>
+</member>
+<member name="M:NeoModule.xfrm달력.BarMultiple_EditValueChanged(System.Object,System.EventArgs)">
+ <summary>
+ 2달 보기 옵션 이벤트
+ </summary>
+</member>
+<member name="M:NeoModule.xfrm달력.BarMonth_EditValueChanged(System.Object,System.EventArgs)">
+ <summary>
+ 달력 월 표기 컨트롤 이벤트
+ </summary>
+</member>
+<member name="M:NeoModule.xfrm달력.clsCalendarView.sD_InitSpr(FarPoint.Win.Spread.FpSpread,System.String)">
+ <summary>
+ 달력 스프레드 컨트롤 초기화
+ </summary>
+ <param name="sprCalendar">달력 스프레드</param>
+ <param name="strR_Tag">전달/이번달 구분 태그</param>
+</member>
+<member name="M:NeoModule.xfrm달력.clsCalendarView.sP_DrawCalendarController(System.String,System.Boolean)">
+ <summary>
+ 달력 그리기 컨트롤러
+ </summary>
+ <param name="strDate"></param>
+ <param name="Multiple"></param>
+</member>
+<member name="M:NeoModule.xfrm달력.clsCalendarView.sD_DrawCalendar(FarPoint.Win.Spread.FpSpread,System.String)">
+ <summary>
+ 달력 그리기
+ </summary>
+ <param name="sprCalendar">달력 스프레드</param>
+ <param name="strR_Date">그려질 월을 구하기위한 날짜</param>
+</member>
+<member name="M:NeoModule.xfrm달력.clsCalendarView.sP_ResizeCalendarController">
+ <summary>
+ 달력 리사이징 컨트롤러
+ </summary>
+</member>
+<member name="M:NeoModule.xfrm달력.clsCalendarView.sD_ResizeCalendar(FarPoint.Win.Spread.FpSpread)">
+ <summary>
+ 달력 리사이징 : 각 셀의 크기를 설정한다.
+ </summary>
+ <param name="sprCalendar">달력 스프레드</param>
+</member>
+<member name="M:NeoModule.xfrm달력.clsCalendarView.sD_ResizeStateLabel(FarPoint.Win.Spread.FpSpread,System.String,System.Collections.Generic.List{DevExpress.XtraEditors.LabelControl})">
+ <summary>
+ 스프레드의 사이즈가 바뀌면 라벨 컨트롤 위치를 재계산한다.
+ </summary>
+ <param name="sprCalendar">달력 스프레드</param>
+ <param name="strPos">라벨 컨트롤 위치 정보</param>
+</member>
+<member name="M:NeoModule.xfrm달력.clsCalendarView.sP_ToggleMultiCalendar">
+ <summary>
+ 달력 2개 켜고 끄기
+ </summary>
+</member>
+<member name="M:NeoModule.xfrm달력.clsCalendarView.sD_ClearCalendarState">
+ <summary>
+ 달력 라벨 컨트롤 클리어
+ </summary>
+</member>
+<member name="M:NeoModule.xfrm달력.clsCalendarView.sD_ClearCalendar(FarPoint.Win.Spread.FpSpread,System.String)">
+ <summary>
+ 달력 배경색상 클리어
+ </summary>
+ <param name="sprCalendar"></param>
+ <param name="strDate"></param>
+</member>
+<member name="M:NeoModule.xfrm달력.clsCalendarView.fD_FindCalendarState(FarPoint.Win.Spread.FpSpread,System.String)">
+ <summary>
+ tag 값을 가지고 라벨 컨트롤의 위치를 찾는다.
+ </summary>
+ <param name="sprCalendar">달력 스프레드</param>
+ <param name="strTag">찾으려는 라벨이 갖고 있는 태그값</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.xfrm달력.clsCalendarView.GetDayRow(FarPoint.Win.Spread.FpSpread,System.String,System.Int32@,System.Int32@)">
+ <summary>
+ 날짜로 Row, Col 구하기
+ </summary>
+ <param name="rSprCalendar">달력 스프레드</param>
+ <param name="sDay">날짜</param>
+ <param name="rRow">Row 값을 받을 변수</param>
+ <param name="rCol">Col 값을 받을 변수</param>
+</member>
+<member name="M:NeoModule.xfrm달력.clsCalendarView.sD_GetCalendarStateFromJinBase(FarPoint.Win.Spread.FpSpread,NeoModule.clsJinBaseList,System.String,System.String,System.String@)">
+ <summary>
+ 환자 진료기본 데이터로드 / 상태값 로드 / 배경색상 표기
+ </summary>
+</member>
+<member name="M:NeoModule.xfrm달력.clsCalendarView.fD_Get일괄입력List(System.String,System.String)">
+ <summary>
+ 일괄입력된 데이터 가져오기
+ </summary>
+ <param name="strStartDate">시작일</param>
+ <param name="strEndDate">종료일</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.xfrm달력.clsCalendarView.fD_Get만성질환List(System.String,System.String)">
+ <summary>
+ 만성질환 데이터 가져오기
+ </summary>
+ <param name="strStartDate">시작일</param>
+ <param name="strEndDate">종료일</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.xfrm달력.clsCalendarView.fD_Get협진List(System.String,System.String)">
+ <summary>
+ 협진 데이터 가져오기
+ </summary>
+ <param name="strStartDate">시작일</param>
+ <param name="strEndDate">종료일</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.xfrm달력.clsCalendarView.sD_DrawCalendarState(FarPoint.Win.Spread.FpSpread,System.String,System.Collections.Generic.List{DevExpress.XtraEditors.LabelControl}@)">
+ <summary>
+ 상태값 달력에 로드시키기
+ </summary>
+ <param name="sprCalendar">달력 스프레드</param>
+ <param name="strR_Pos">상태값 정보 변수</param>
+</member>
+<member name="M:NeoModule.xfrm달력.clsCalendarView.lblState_DoubleClick(System.Object,System.EventArgs)">
+ <summary>
+ 달력에 표시된 라벨 컨트로 더블클릭 이벤트
+ </summary>
+</member>
+<member name="M:NeoModule.xfrm달력.clsCalendarView.lblState_MouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+ <summary>
+ 달력에 표시된 라벨 컨트로 클릭 이벤트
+ </summary>
+</member>
+<member name="M:NeoModule.xfrm달력.clsCalendarView.Spread_CellClick(System.Object,FarPoint.Win.Spread.CellClickEventArgs)">
+ <summary>
+ 달력 셀 클릭시 보더 표기해주기 (날짜표기, 아래칸 둘다)
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:NeoModule.xfrm달력.clsCalendarView.sD_DrawClickDateBorder(FarPoint.Win.Spread.FpSpread,System.String)">
+ <summary>
+ 달력 셀 클릭시 보더 표기해주기 (날짜표기, 아래칸 둘다)
+ </summary>
+</member>
+<member name="T:NeoModule.xfrm달력.clsCalendarView.clsClickCellInfo">
+ <summary>
+ 달력 일반 클릭시 해당 셀과 스프레드 저장용 
+ </summary>
+</member>
+<member name="M:NeoModule.xfrm똑닥관리.fD_Load조건체크(System.String,System.String,System.String)">
+ <summary>
+ 리스트 Load할 때 조건에 맞는지 체크
+ </summary>
+ <param name="str진료실코드"></param>
+ <param name="str상태"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.xfrm병동현황.BarBtn엑셀_ItemClick(System.Object,DevExpress.XtraBars.ItemClickEventArgs)">
+ <summary>
+ 22/05/17 준혁 엑셀출력 추가
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:NeoModule.xfrm상병등록.sD_LoadData(System.String,System.String,System.Boolean)">
+ <summary>
+ 로드
+ </summary>
+ <param name="strCode1"></param>
+ <param name="strCode2"></param>
+ <param name="bln검색">검색버튼 눌러서 왔는지 여부</param>
+</member>
+<member name="M:NeoModule.xfrm상병등록.fD_PushSnagMng(FarPoint.Win.Spread.FpSpread,System.Int32)">
+ <summary>
+ SangMng 클래스에 담기
+ </summary>
+ <param name="sprSet"></param>
+ <param name="intRow"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.xfrm상병등록.sD_Add상병등록(NeoModule.ClsSangMng)">
+ <summary>
+ 등록화면에 상병 넣어주기
+ </summary>
+ <param name="clsSangMng"></param>
+</member>
+<member name="M:NeoModule.xfrm예약관리.sD_CheckInit예약구분">
+ <summary>
+ 예약종류 셋팅 안되어있는 경우 기본 값 넣어서 업데이트 해주기
+ </summary>
+</member>
+<member name="M:NeoModule.xfrm예약관리.fD_GetBackColor(System.Byte,System.String,System.Drawing.Color)">
+ <summary>
+ 예약종류에 따른 배경색 구해오기
+ </summary>
+ <param name="byt예약구분"></param>
+ <param name="str예약종류"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.xfrm예약관리.sD_LoadReserveInfo">
+ <summary>
+ 예약구분 변경시에 로드.
+ </summary>
+</member>
+<member name="M:NeoModule.xfrm예약관리.sD_LoadSchedule">
+ <summary>
+ 21/07/02 명주
+ 의사 스케쥴에 따라 예약 할 수 없는 시간대는 배경색 처리
+ 예약시간의 RowIndex > fD_FindTimeRow에서 GET
+ </summary>
+</member>
+<member name="M:NeoModule.xfrm예약관리.sD_TimeTableAddRow(System.Int32@,System.Int32)">
+ <summary>
+ TimeTable Row 추가하기
+ </summary>
+ <param name="intRowIndex"></param>
+</member>
+<member name="M:NeoModule.xfrm예약관리.fD_GetColumnFromTag(System.String)">
+ <summary>
+ Tag값으로 Column 가져오기
+ </summary>
+ <param name="strTag"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.xfrm예약관리.fD_GetRowFromTime(System.String,System.Boolean)">
+ <summary>
+ 시간으로 Row 구해오기
+ </summary>
+ <param name="strTime"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.xfrm예약관리.sD_ShowCalanderCount(System.String,System.String)">
+ <summary>
+ 달력에 예약건수 표기하기
+ </summary>
+ <param name="strSDate"></param>
+ <param name="strEDate"></param>
+</member>
+<member name="M:NeoModule.xfrm예약관리.sD_ShowCalanderPat(System.String,System.String,System.String)">
+ <summary>
+ 21/07/07 명주 추가
+ 환자별 해당 달 예약현환 달력에 BackColor로 표기
+ </summary>
+ <param name="strSDate"></param>
+ <param name="strEDate"></param>
+ <param name="strR_챠트번호"></param>
+</member>
+<member name="M:NeoModule.xfrm예약관리.sD_Show예약관리설정">
+ <summary>
+ 예약관리 설정화면 띄우기
+ </summary>
+</member>
+<member name="M:NeoModule.xfrm예약관리.fD_ReserveTimeCheck(System.String,System.Boolean)">
+ <summary>
+ 예약시간 유효성 체크
+ </summary>
+ <param name="str예약시간">체크할 예약시간</param>
+ <param name="blnMsg">메세지 표출여부</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.xfrm예약관리.btn예약삭제_Click(System.Object,System.EventArgs)">
+ <summary>
+ 21/05/26 준혁 예약삭제 구분 추가
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="T:NeoModule.xfrm주소검색">
+ <summary>
+ 다음 API 사용
+ 웹서버 : http://post.neochart.co.kr/v2/index.html      '115.68.14.186
+ 도움말 : http://postcode.map.daum.net/guide
+ </summary>
+</member>
+<member name="M:NeoModule.xfrm증상.fD_SaveCheck">
+ <summary>
+ 저장 진행해도 되는지 체크
+ </summary>
+ <returns>진행가능 : True, 불가 : False</returns>
+</member>
+<member name="M:NeoModule.xfrm증상.sD_InitControl">
+ <summary>
+ 컨트롤 초기화
+ </summary>
+</member>
+<member name="M:NeoModule.xfrm증상.fD_SaveSymp분리">
+ <summary>
+ 증상분리 저장 루틴
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.xfrm증상.sD_LoadData(System.Byte)">
+ <summary>
+ 환자 호출시 해당환자 증상 로드
+ </summary>
+</member>
+<member name="M:NeoModule.xfrm증상.sD_RenderPrevSympList">
+ <summary>
+ 이전 증상 컨트롤에 올리기
+ </summary>
+</member>
+<member name="M:NeoModule.xfrm증상.txtEditor_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+ <summary>
+ 증상매크로 . 찍어서 하는거 구현한 이벤트
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:NeoModule.xfrm증상.txtEditor_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ 증상 매크로 단축키로 입력 구현 이벤트
+ 증상 입력란에 클립보드에 있는 이미지는 안들어가게 막음
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:NeoModule.xfrm증상.rtf이전증상_MouseDoubleClick(System.Object,System.Windows.Forms.MouseEventArgs)">
+ <summary>
+ 이전증상 더블클릭 리핏
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="T:NeoModule.xfrm증상.clsPatientSympList">
+ <summary>
+ 환자 증상 리스트 클래스
+ </summary>
+</member>
+<member name="T:NeoModule.xfrm증상.clsPatientSymp">
+ <summary>
+ 환자 증상 클래스
+ </summary>
+</member>
+<member name="T:NeoModule.xfrm증상.clsRtfFontController">
+ <summary>
+ 증상 입력란 폰트 컨트롤 클래스
+ </summary>
+</member>
+<member name="M:NeoModule.xfrm증상.clsRtfFontController.fD_GetFontDetail">
+ <summary>
+ 선택된 항목의 글꼴 반환
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.xfrm증상.clsRtfFontController.sD_UpdateFontBar(System.Drawing.Font)">
+ <summary>
+ 현재 커서 혹은 선택된 글꼴을 폰트툴바에 반영
+ </summary>
+</member>
+<member name="M:NeoModule.xfrm증상.clsRtfFontController.ChangeFontStyle(System.Drawing.FontStyle,System.Boolean)">
+ <summary>
+ 폰트 스타일 변경
+ </summary>
+ <param name="Style">폰트 스타일 (Bold, Italic, Underline)</param>
+ <param name="isAdd">추가/제거</param>
+</member>
+<member name="M:NeoModule.xfrm증상.clsRtfFontController.ChangeFontName(System.String)">
+ <summary>
+ 폰트 변경
+ </summary>
+</member>
+<member name="M:NeoModule.xfrm증상.clsRtfFontController.ChangeFontSize(System.Single)">
+ <summary>
+ 폰트 사이즈 변경
+ </summary>
+ <param name="Size">폰트 크기</param>
+</member>
+<member name="M:NeoModule.xfrm증상.clsRtfFontController.ChangeFontColor(System.Drawing.Color)">
+ <summary>
+ 폰트 색상 변경
+ </summary>
+ <param name="newColor">선택 색상</param>
+</member>
+<member name="M:NeoModule.xfrm증상매크로.fD_GetQuery(NeoModule.xfrm증상매크로.enumSympSettingsQuery)">
+ <summary>
+ 쿼리
+ </summary>
+ <param name="QueryType"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.xfrm증상매크로.fD_SetShortCuts">
+ <summary>
+ 단축키 콤보 리스트 생성
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.xfrm증상매크로.sD_InitControl">
+ <summary>
+ 컨트롤 초기화
+ </summary>
+</member>
+<member name="M:NeoModule.xfrm증상매크로.sD_LoadUserList">
+ <summary>
+ 사용자 리스트 로드
+ </summary>
+</member>
+<member name="M:NeoModule.xfrm증상매크로.sD_RenderSympMacroList(System.String)">
+ <summary>
+ 선택된 사용자의 증상 매크로 리스트 그리기
+ </summary>
+ <param name="strUserID"></param>
+</member>
+<member name="M:NeoModule.xfrm증상매크로.sD_ShowFocusedMacroDetail(NeoModule.xfrm증상매크로.clsUserSympMacro)">
+ <summary>
+ 선택된 매크로 하단 상세보기에 보이기
+ </summary>
+ <param name="MacroItem"></param>
+</member>
+<member name="M:NeoModule.xfrm증상매크로.sD_ClearMacroDetail">
+ <summary>
+ 하단 상세보기 초기화
+ </summary>
+</member>
+<member name="M:NeoModule.xfrm증상매크로.sD_SaveMacro">
+ <summary>
+ 매크로 저장
+ </summary>
+</member>
+<member name="M:NeoModule.xfrm증상매크로.btnSangSearch_Click(System.Object,System.EventArgs)">
+ <summary>
+ 22/11/15 준혁 상병참조 추가
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:NeoModule.xfrm진료대기자.sD_SetCheckAllJinStation">
+ <summary>
+ 진료실 콤보 전체 체크하기
+ </summary>
+</member>
+<member name="M:NeoModule.xfrm바이탈.fP_SaveCheck(NeoModule.clsChartVitalBase)">
+ <summary>
+ 22/08/17 준혁 바이탈저장 전 현재 저장되있는 내역과 비교할수있도록 추가
+               아래는 일단 생각되는 케이스들이고 실제 테스트시에도 발생하긴 함..
+ Case A
+  - PC 두 대에서 동일 환자를 호출함. 
+    1번 PC에서 A환자를 불러둔 상태로 다른일을 하고있다가 2번 PC에서도 A환자를 호출함
+    2번 PC에서 바이탈 작성 후 저장 -> 1번 PC는 아직 바이탈 새로고침이 되지 않은상태
+    1번 PC 사용자가 자리에 와서 바이탈작성 후 저장하면 2번 PC에서 작성한 내용은 날아감.
+    
+ Case B
+  - PC 두 대에서 동일 환자를 호출함. 
+    1번 PC에서 바이탈을 열심히 작성함 (공백으로 저장되있는 바이탈에 입력하거나 기존 작성되어있는 바이탈에 입력중..)
+    2번 PC에서 1번 사용자가 작성중인 바이탈을 삭제함
+    1번 PC에서 바이탈 저장 시 Update 를 날리는데 이미 2번PC에서 삭제한 바이탈이기 때문에 update 하면 오류나고 바이탈이 저장되지 않음 > 전체내용 ㅂㅇ
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.xfrm바이탈.sD_SaveVitalControl(DevExpress.XtraTab.XtraTabPage)">
+ <summary>
+ Tab별 컨트롤 속성 마지막값 기억
+ </summary>
+ <param name="TabPage">탭</param>
+</member>
+<member name="M:NeoModule.xfrm바이탈.vwVital_RowUpdated(System.Object,DevExpress.XtraGrid.Views.Base.RowObjectEventArgs)">
+ <summary>
+ 일괄 저장시 저잘되야할 Row 판단용 상태 컬럼에 상태값 변경 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:NeoModule.xfrm바이탈.ColumnEdit_EditValueChanged(System.Object,System.EventArgs)">
+ <summary>
+ 바이탈 데이터 변경시 저장되야할 Row 판단용
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:NeoModule.xfrm바이탈.barBtnLog_ItemClick(System.Object,DevExpress.XtraBars.ItemClickEventArgs)">
+ <summary>
+ 22/04/18 정일 복원 가능하도록 추가
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:NeoModule.xfrm협진기록지.sD_SendMsg(System.Boolean)">
+ <summary>
+ 협진 의뢰/회신 완료일 때 메신저 전송 기능
+ </summary>
+ <param name="blnReply">회신완료 여부</param>
+</member>
+<member name="M:NeoModule.xfrm환자기록.sD_CreateGridControl(DevExpress.XtraTab.XtraTabPage)">
+ <summary>
+ 각탭에 필요한 컨트롤 만들어 붙히기
+ 근데 이렇게 만들어 붙힐꺼면 디자인에서 해도 됐네...
+ sD_InitControl 에서 호출함
+ </summary>
+ <param name="myTabItem">현재 생성된 탭</param>
+</member>
+<member name="M:NeoModule.xfrm환자기록.sD_InitTPR(NeoModule.clsVitalCode,DevExpress.XtraTab.XtraTabPage)">
+ <summary>
+ TPR탭 컨트롤 초기화
+ </summary>
+ <param name="VitalBase">TPR 코드 클래스</param>
+ <param name="TabTPR">TPR 탭</param>
+</member>
+<member name="M:NeoModule.xfrm환자기록.sD_InitVital(NeoModule.clsVitalCode,DevExpress.XtraTab.XtraTabPage)">
+ <summary>
+ 병동 바이탈 탭 컨트롤 초기화
+ </summary>
+ <param name="VitalBase"></param>
+ <param name="TabItem"></param>
+</member>
+<member name="M:NeoModule.xfrm환자기록.sD_InitNurseRecord(DevExpress.XtraTab.XtraTabPage)">
+ <summary>
+ 간호기록 탭 컨트롤 초기화
+ </summary>
+</member>
+<member name="M:NeoModule.xfrm환자기록.sD_LoadData">
+ <summary>
+ 환자 데이터 로드
+ </summary>
+</member>
+<member name="M:NeoModule.xfrm환자기록.sD_DataRoute(NeoModule.xfrm환자기록.clsPatientWardInfo,DevExpress.XtraTab.XtraTabPage)">
+ <summary>
+ grdWard에서 입퇴원정보를 선택하거나 탭이 변경될때 데이터 로드
+ </summary>
+ <param name="clsWardInfo">입퇴원 정보(현재 grdWard 리스트에 선택되어있는)</param>
+ <param name="TabItem">선택된 탭</param>
+</member>
+<member name="M:NeoModule.xfrm환자기록.sD_SetChartInfo">
+ <summary>
+ 환자 챠트정보 표시
+ </summary>
+</member>
+<member name="M:NeoModule.xfrm환자기록.sD_RenderWardList">
+ <summary>
+ 환자 입퇴원리스트 뿌리기
+ </summary>
+</member>
+<member name="M:NeoModule.xfrm환자기록.sD_LoadTPRData(NeoModule.xfrm환자기록.clsPatientWardInfo,DevExpress.XtraTab.XtraTabPage)">
+ <summary>
+ 환자 TPR 데이터 불러와 찍어주기
+ </summary>
+ <param name="clsWardInfo">입퇴원 정보(현재 grdWard 리스트에 선택되어있는)</param>
+ <param name="myTabItem">선택된 탭(TPR 탭)</param>
+</member>
+<member name="M:NeoModule.xfrm환자기록.sD_LoadVitalData(NeoModule.xfrm환자기록.clsPatientWardInfo,DevExpress.XtraTab.XtraTabPage)">
+ <summary>
+ 환자 병동바이탈 데이터 불러와 찍어주기
+ </summary>
+ <param name="clsWardInfo">입퇴원 정보(현재 grdWard 리스트에 선택되어있는)</param>
+ <param name="myTabItem">선택된 탭(병동바이탈 탭)</param>
+</member>
+<member name="M:NeoModule.xfrm환자기록.sD_LoadNurseRecord(NeoModule.xfrm환자기록.clsPatientWardInfo,DevExpress.XtraTab.XtraTabPage)">
+ <summary>
+ 환자 간호기록 데이터 불러와 찍어주기
+ </summary>
+ <param name="clsWardInfo">입퇴원 정보</param>
+ <param name="myTabItem">간호기록 탭</param>
+</member>
+<member name="M:NeoModule.xfrm환자기록.fD_CreateSerise(System.String,System.Drawing.Color)">
+ <summary>
+ 그래프 라인 객체 생성 및 초기화
+ </summary>
+ <param name="Name">Series 명칭</param>
+ <param name="LineColor">Series 색상</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.xfrm환자기록.fD_Sorting(System.Collections.Generic.List{NeoModule.clsChartVitalBase}@)">
+ <summary>
+ 바이탈 데이터 등록일자 시간순 정렬
+ </summary>
+ <param name="lstVitalData">바이탈 데이터</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.xfrm환자기록.GetVitalFieldName(System.Int32)">
+ <summary>
+ 바이탈필드 명칭 구하는 함수
+ </summary>
+ <param name="Index">순서</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.xfrm환자기록.sD_SaveVitalColumnSize(DevExpress.XtraTab.XtraTabPage)">
+ <summary>
+ 그리드 컬럼 넓이 저장
+ </summary>
+ <param name="tabPage">선택된 탭</param>
+</member>
+<member name="T:NeoModule.xfrm환자기록.clsPatientWardList">
+ <summary>
+ 환자 입퇴원기록
+ </summary>
+</member>
+<member name="M:NeoModule.mdlAPIFunc.RequestApproval(System.String@,System.Int64,System.Int64,System.String@,System.Int64,System.String@,System.Int64,System.Int64)">
+ <summary>
+ 현금영수증 관련 DLL
+ </summary>
+ <param name="strV_IP"> KSNET IP </param>
+ <param name="intV_Port"> KSNET Port </param>
+ <param name="intV_Media"> 결제종류 (1 - 현금영수증) </param>
+ <param name="strV_RequestMsg"> 요청문자열 </param>
+ <param name="intV_RequestLen"> 총 길이 </param>
+ <param name="strR_RecvMsg"> 응답메시지 </param>
+ <param name="intV_ReadTimeOut"> 응답 타임아웃 값 </param>
+ <param name="intV_ConnectOption"> 연결방식 </param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlAPIFunc.RequestApproval2(System.String@,System.String@,System.Int32,System.Int32,System.String@,System.Int32,System.String@,System.Int32,System.Int32)">
+ <summary>
+ 
+ </summary>
+ <param name="strV_LogPath"> 로그파일 저장경로 </param>
+ 나머지 위와 동일
+ <returns></returns>
+</member>
+<member name="T:NeoModule.mdlDemandSAM">
+ <summary>
+ 22/08/12 준혁
+ 청구 샘파일 생성 관련 const, 함수
+ </summary>
+</member>
+<member name="M:NeoModule.mdlDemandSAM.ConvertEDI(System.String,System.Int32,System.Int32,System.Int32)">
+ <summary>
+ 
+ </summary>
+ <param name="Edival">작성값</param>
+ <param name="p_strBytes">자릿수(숫자일때는 정수+실수의 자릿수)</param>
+ <param name="p_Flag">문자 1, 숫자 2</param>
+ <param name="p_realBytes">실수 자릿수</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlFunc.f연령(System.String,System.String,System.String)">
+ <summary>
+ 요양병동 프로그램용 나이계산 함수.
+ </summary>
+ <param name="s구분">연령 or 나이 or Y : 년차 XX. , 월 or 개월 or M : 월 .XX </param>
+ <param name="s기준일">나이 계산 기준일자</param>
+ <param name="s생년월일">생일(yyyy-mm-dd)</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlFunc.fP_GetDSClone_ConvertString(System.Data.DataSet,System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})">
+ <summary>
+ DataSet의 Column들의 DataType을 전부 String으로 변환하여 DataSet 반환해주는 함수.
+ </summary>
+ <param name="dsR_Ori">DataSet 원본</param>
+ <returns>복사된 DataSet 객체</returns>
+</member>
+<member name="T:NeoModule.mdlGlobal.ocsEnumPreference_주사수기료비급여적용방법">
+ <summary>
+ 환경설정 관련 Enum값
+ </summary>
+</member>
+<member name="T:NeoModule.mdlGlobal.ocsEnum수납대기상태">
+ <summary>
+ 수납상태, 수납여부 관련 enum 추가
+ </summary>
+</member>
+<member name="M:NeoModule.mdlGlobal.sG_BeforeProgramLoadSet(System.String,System.String,NeoModule.mdlGlobal.Log실행파일구분)">
+ <summary>
+ 프로젝트 실행전에 셋팅해야할것들.
+ </summary>
+</member>
+<member name="M:NeoModule.mdlGlobal.fG_AssemblyFileVersion">
+ <summary>
+ Assembly File 버젼정보 가져오기
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobal.fG_AssemblyVersion">
+ <summary>
+ Assemlby 버젼정보 가져오기
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobal.sG_DataUpdate">
+ <summary>
+ 진료실에서 추가된 테이블, 컬럼들 추가... → 나중에 다른곳으로 분리 예정. 일단은 NeoModule에 !
+ </summary>
+</member>
+<member name="M:NeoModule.mdlGlobal.sD_DataUpdateTable(System.String,System.String@)">
+ <summary>
+ 테이블 추가
+ </summary>
+ <param name="strDataVersion">현재 데이터버젼</param>
+ <param name="strGetUpdateVersion">쿼리 돌리고 업데이트 될 버젼</param>
+</member>
+<member name="M:NeoModule.mdlGlobal.fD_GetTableCheckQry(System.String,System.String)">
+ <summary>
+ 테이블 유무 체크쿼리 반환
+ </summary>
+ <param name="strSql">오리지날 쿼리</param>
+ <param name="strTable">체크할 테이블 명</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobal.fD_GetDataCheckQry(System.String,System.String,System.String[],System.String[])">
+ <summary>
+ 데이터 유무 체크 쿼리
+ </summary>
+ <param name="strSql">오리지날 쿼리</param>
+ <param name="strTable">체크할 테이블</param>
+ <param name="strFields">체크할 필드 배열</param>
+ <param name="strValues">체크할 필드값 배열</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobal.sD_DataUpdateFields(System.String,System.String@)">
+ <summary>
+ 필드 추가
+ </summary>
+ <param name="strDataVersion">현재 데이터버젼</param>
+ <param name="strGetUpdateVersion">쿼리 돌리고 업데이트 될 버젼</param>
+</member>
+<member name="M:NeoModule.mdlGlobal.fD_GetFieldCheckQry(System.String,System.String,System.String)">
+ <summary>
+ 필드 유무 체크쿼리 반환
+ </summary>
+ <param name="strSql">오리지날 쿼리</param>
+ <param name="strTable">체크할 테이블 명</param>
+ <param name="strField">체크할 필드명</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobal.fD_GetFieldLengthCheckQry(System.String,System.String,System.String,System.String,System.Int32)">
+ <summary>
+ 필드 길이체크 하기
+ </summary>
+ <param name="strSql">오리지날 쿼리</param>
+ <param name="strTable">테이블</param>
+ <param name="strField">필드</param>
+ <param name="strDataType">데이터 타입 스트링</param>
+ <param name="intLength">길이</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobal.fD_GetFieldTypeCheckQry(System.String,System.String,System.String,System.String)">
+ <summary>
+ 필드 데이터 형 체크
+ </summary>
+ <param name="strSql"></param>
+ <param name="strTable"></param>
+ <param name="strField"></param>
+ <param name="strDataType"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobal.sD_CreateReceipt">
+ <summary>
+ 영수증관련 데이터베이스, 테이블 생성
+ </summary>
+</member>
+<member name="M:NeoModule.mdlGlobal.sD_CalcDataInsert(System.String)">
+ <summary>
+ 금액관련 본인부담률 테이블 새로작성
+ </summary>
+</member>
+<member name="M:NeoModule.mdlGlobal.sD_CreateMemoLogManage">
+ <summary>
+ 메모 로그 관리 데이터베이스, 테이블 생성
+ </summary>
+</member>
+<member name="M:NeoModule.mdlGlobal.sD_CreateVitalLogManage">
+ <summary>
+ 22/04/18 정일 바이탈로그 테이블 생성 
+ </summary>
+</member>
+<member name="M:NeoModule.mdlGlobal.sD_CreateProc(System.Boolean)">
+ <summary>
+ 2022-08-10 정일 프로시저 추가 생성
+ </summary>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.GetValue(System.Object)">
+ <summary>
+ 숫자 데이터 체크 함수
+ </summary>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.GetBoolean(System.Object)">
+ <summary>
+ Boolean 데이터 체크 함수
+ </summary>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.sG_ClearADOObj(System.Object)">
+ <summary>
+ ADODB 객체 관련 Clear 함수.
+ </summary>
+ <param name="objR_ADO">ADODB 객체 전달. ADODB.Connetion, ADODB.RecordSet, ADODB.Stream 지원. </param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_Get성별(System.String,System.Byte)">
+ <summary>
+ 주민번호로 성별 가져오기
+ </summary>
+ <param name="bytGubun"> 0 : M / F , 1 : 남 / 여</param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_Get성별Image(System.String)">
+ <summary>
+ 주민번호로 성별 구해서 이미지 가져오기
+ </summary>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_Get생년월일(System.String,System.Boolean)">
+ <summary>
+ 생년월일 구해오는 함수
+ </summary>
+ <param name="strJumin">주민번호 암호화, 복호화 상관 없음.</param>
+ <param name="blnDateValidityCheck">구해진 생년월일이 날짜형식인지 체크하여 아닐 경우 1월1일생으로 반환.</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_Get나이(System.String,System.String,System.String,System.String,System.String,System.SByte,System.Boolean,System.Int32)">
+ <summary>
+ 주민번호로 나이 가져오기
+ </summary>
+ <param name="str주민번호">나이 계산을 위한 주민번호</param>
+ <param name="str기준일">나이 계산 기준일</param>
+ <param name="str일일접미사"> 일수에 대한 접미사 ▶ XX일, XXd</param>
+ <param name="str개월접미사"> 개월에 대한 접미사 ▶ XX개월, XXm</param>
+ <param name="str나이접미사">전체 나이에 대한 접미사 ▶ XX세, XX</param>
+ <param name="blnDetail">진료실 상단 등 나이 표기하는 표기공간이 넓은 경우 보다 상세하게 표기하고 싶을 경우</param>    
+ <param name="int개월수표기">넘겨준 개월 미만 환자들은 xx개월로 표기되는 파라메터</param>    
+ <remarks></remarks>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_복호화(System.String)">
+ <summary>
+ 복호화 함수.
+ </summary>
+ <param name="strValue">복호화 할 암호화 문자열</param>
+ <returns>복호화 된 문자열</returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_암호화(System.String)">
+ <summary>
+ 암호화 함수.
+ </summary>
+ <param name="strValue">암호화 할 문자열</param>
+ <returns>암호화 된 문자열</returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.sG_SaveChartInfo(System.String,System.Boolean)">
+ <summary>
+ 챠트정보 INI로 전달
+ </summary>
+ <param name="strChartNumber">챠트번호</param>
+ <param name="bln문서관리">실행하는게 문서관리인지 여부</param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_GetJohapCode(System.String)">
+ <summary>
+ 조합 정보 가져오기
+ </summary>
+ <param name="strJohapCode">사업장기호</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_GetBohumDefaultJohapCode(System.String,NeoModule.clsCode@)">
+ <summary>
+ 기본적으로 사업장 등록을 하지 않아도 인정되는 기호들 공단(9999,00000000000 등), 급여(0380000), 일반(0)
+ </summary>
+ <param name="strJohapCode"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.IsJuminCheck(System.String)">
+ <summary>
+ 주민번호 유효성 체크
+ </summary>
+ <param name="strJumin">주민번호</param>
+ <returns>유효하지 않을경우 False</returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.sG_TelFormatCheck(DevExpress.XtraEditors.TextEdit@)">
+ <summary>
+ 휴대전화, 전화번호 등 Format 체크함수
+ </summary>
+ <param name="txtR_Tel"></param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.sG_CheckInputValidate(DevExpress.XtraEditors.TextEdit@)">
+ <summary>
+ 숫자, - 만 입력가능한 텍스트박스 유효성 체크 함수.(주민번호, 휴대전화 등)
+ </summary>
+ <param name="txtR_Check"></param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_자격조회(NeoModule.clsChart@,NeoModule.clsJinBase@,System.Boolean)">
+ <summary>
+ 자격조회 진행 하기
+ </summary>
+ <param name="_clsChart">환자정보가 담긴 Chart클래스</param>
+ <param name="_clsJinbase">진료정보가 담긴 Jinbase클래스(진료일을 알기 위해)</param>
+ <param name="blnShow자격조회">자격조회 결과창을 보여줄지 여부</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.sG_Get빠른문서(System.String)">
+ <summary>
+ 문서관리에서 진료실에 뜨도록 등록한 문서 리스트를 가져와서 팝업으로 띄워주는 함수.
+ </summary>
+ <param name="strChartNumber"></param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_Search상병(NeoModule.mdlGlobal.enSearchType,System.String,System.String,System.Boolean,System.String)">
+ <summary>
+ 상병 검색함수.
+ </summary>
+ <param name="searchType">검색 위치. 코드or명칭</param>
+ <param name="strSearch">검색 문자열</param>
+ <param name="str처방일자">검색하는 일자 기준.</param>
+ <param name="blnMessage">검색 결과가 없을 때 결과가 없다는 메세지를 띄워줄지 여부</param>
+ <returns></returns>
+ '22/11/04 정일 명칭포함
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_Search처방(NeoModule.mdlGlobal.enSearchType,System.String,System.String,System.Boolean,System.Boolean)">
+ <summary>
+ 처방 검색함수
+ </summary>
+ <param name="searchType">검색 위치. 코드or한글명칭or영문명칭</param>
+ <param name="strSearch">검색 문자열</param>
+ <param name="str처방일자">처방일자 기준</param>
+ <param name="blnMessage">검색결과 없을 때 메세지 띄울지 여부</param>
+ <param name="bln재검색">검색결과가 없으면 다른 위치에서 다시한 번 재검색을 할 지 여부</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.sG_SetSpr처방이미지(FarPoint.Win.Spread.FpSpread@,System.String,System.Int32,System.Int32,System.String,System.Boolean,System.Boolean)">
+ <summary>
+ 스프레드에 항목별 처방이미지 셋팅하기
+ </summary>
+ <param name="sprR_처방">스프레드</param>
+ <param name="str항목구분">항목구분</param>
+ <param name="intRow"></param>
+ <param name="intCol"></param>
+ <param name="str처방코드"></param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_Get급여구분(NeoModule.mdlGlobal.ocsEnumSlipCostLevel,NeoModule.mdlGlobal.ocsEnumBohumKind)">
+ <summary>
+ 급여구분 명칭 가져오기
+ </summary>
+ <param name="byt급여구분">급여구분 Enum</param>
+ <returns>명칭</returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_ProccessRunCheck(System.String,System.Boolean)">
+ <summary>
+ 실행파일(exe 제외) 이름으로 실행여부 체크합니다
+ </summary>
+ <param name="str실행파일">exe를 제외한 실행파일 이름을 입력합니다. Ex) 문서관리일 경우 ▶ Documents </param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.LenB(System.String)">
+ <summary>
+ 영문,숫자,한글 모두 1글자를 2Byte로 계산하였을 때 길이 반환 ex)김12A -> 8 반환
+ </summary>
+ <param name="strLength">길이 체크할 문자</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.LenH(System.String)">
+ <summary>
+ Byte 문자열 길이 체크
+ </summary>
+ <param name="strLength">길이 체크할 문자</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.LeftB(System.String,System.Int32)">
+ <summary>
+ 영문,숫자,한글 모두 1글자를 2Byte로 계산하였을 때 길이로 Left 자르기.
+ </summary>
+ <param name="strLength"></param>
+ <param name="intLength"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.MidH(System.String,System.Int32,System.Int32)">
+ <summary>
+ 영문,숫자는 1글자에 1Byte 한글은 1글자에 2Byte로 계산하였을 때의 길이로 mid함수 구현 ex)MidH("김12A",3) -> "김1"
+ </summary>
+ <param name="strLength"></param>
+ <param name="intStart"></param>
+ <param name="intLength"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.MidB(System.String,System.Int32,System.Int32)">
+ <summary>
+ 영문,숫자,한글 모두 1글자를 2Byte로 계산하였을 때의 길이로 mid함수 구현 ex)MidB("김12A",4) -> "김1"
+ </summary>
+ <param name="strLength"></param>
+ <param name="intStart"></param>
+ <param name="intLength"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.IsHanString(System.String)">
+ <summary>
+ 문자열에 한글있는지 여부
+ </summary>
+ <param name="str">문자열</param>
+ <returns>있으면 True 없으면 False</returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_IsFormExists(System.Type)">
+ <summary>
+ 응용프로그램에서 폼이 떠있는지 체크
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.sG_WriteLog(System.String,System.String,NeoModule.mdlGlobal.ocsEnumLogKind,System.Boolean)">
+ <summary>
+ 로그 쓰기
+ </summary>
+ <param name="strMsg">로그 메세지</param>
+ <param name="LogKind">로그 종류(0:Process, 1:Error, 2:Query)</param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.sG_WriteErrorLog(System.String,System.String,System.Exception,System.Boolean)">
+ <summary>
+ Try Catch용 에러 로그 쌓기 함수 따로 추가
+ </summary>
+ <param name="strModule">모듈</param>
+ <param name="strMsg">메세지</param>
+ <param name="ex">Try Catch문 사용시 Exception 객체</param>
+ <param name="blnWriteFile">파일로그 쌓을지 여부</param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.sG_WriteTextFile(System.String,System.String)">
+ <summary>
+ 특정 텍스트파일에 내용 쓰기
+ </summary>
+ <param name="strTxtFileName">텍스트파일 이름</param>
+ <param name="strMsg">쓰기할 내용</param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.sP_InsertOcsLogData(System.String,System.String,System.String,System.String)">
+ <summary>
+ 2022-04-20 정일 데이터오류 발생했을떄 OCS에 데이터 남길 수 있도록 추가
+ </summary>
+ <param name="sMsg"></param>
+ <param name="sChartNumber"></param>
+ <param name="sFuction"></param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.sD_InsertOCS접속로그">
+ <summary>
+ 2022-04-20 정일 추가
+ 프로그램 실행했단 기록 남기기
+ </summary>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_ProgarmName(NeoModule.mdlGlobal.Log실행파일구분)">
+ <summary>
+ 2022-04-21 정일 프로그램 구분 추가
+ </summary>
+ <param name="enProgramKind"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_ReadTextFile(System.String)">
+ <summary>
+ 특정 텍스트파일 내용 읽어오기
+ </summary>
+ <param name="strTxtFileName">텍스트파일 이름</param>
+ <returns>텍스트파일 내용</returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_FillZero(System.String,System.Int32)">
+ <summary>
+ 전달한 자리수만큼 문자열 길이를 제외하여 0으로 채우기
+ </summary>
+ <param name="strstr">문자열</param>
+ <param name="intLength">자리수</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.sG_RunWeb(System.String)">
+ <summary>
+ WEB URL 실행.
+ </summary>
+ <param name="strURL"></param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_GetByteArrFromImage(System.String)">
+ <summary>
+ 경로의 이미지 파일을 byte배열로 반환
+ </summary>
+ <param name="strFileName"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_GetTextSize(System.Drawing.Graphics,System.String,System.Drawing.Font,System.Int32)">
+ <summary>
+ 컨트롤 그래픽 그릴 때 해당 폰트, 해당 텍스트로 어느정도 사이즈를 차지하는지 반환.
+ https://docs.microsoft.com/ko-kr/dotnet/api/system.drawing.graphics.measurestring?view=dotnet-plat-ext-3.1
+ </summary>
+ <param name="g"></param>
+ <param name="strText">텍스트</param>
+ <param name="font">폰트</param>
+ <param name="intWidth">넓이를 제한</param>
+ <returns>Size</returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fP_GetFiles(System.String,System.String,System.Boolean)">
+ <summary>
+ 특정경로의 파일 or 폴더 리스트 가져오기
+ </summary>
+ <param name="strPath">루트 폴더 경로</param>
+ <param name="strExtension">파일로 가져올경우 파일의 확장자(txt, png, jpg, exe, ...) 여러파일의 경우는 아직 안함</param>
+ <param name="blnFullSearch">루트 폴더의 하위 폴더까지 전부 검색할지 여부</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_FindWindow(System.String,System.String)">
+ <summary>
+ findwindow
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fP_FindControlByName(System.Windows.Forms.Control.ControlCollection,System.String,System.Boolean)">
+ <summary>
+ 컨트롤 이름으로 컨트롤 찾기
+ </summary>
+ <param name="Controls">컨트롤배열</param>
+ <param name="strName">찾는 컨트롤 이름 .name 속성</param>
+ <param name="blnSearchAllChild">자식의 자식까지 전부 검색</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fP_FindControlByTypeName(System.Windows.Forms.Control.ControlCollection,System.String,System.Boolean)">
+ <summary>
+ 컨트롤 타입으로 컨트롤 찾기
+ </summary>
+ <param name="Controls">컨트롤배열</param>
+ <param name="strTypeName">찾는 컨트롤 이름 .name 속성</param>
+ <param name="blnSearchAllChild">자식의 자식까지 전부 검색</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.ToIcon(System.Drawing.Bitmap,System.Boolean,System.Drawing.Color)">
+ <summary>
+ Image를 Icon으로 변환
+ </summary>
+ <param name="img"></param>
+ <param name="makeTransparent"></param>
+ <param name="colorToMakeTransparent"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_BitmapToJPEG(System.Drawing.Bitmap,System.Int64)">
+ <summary>
+ BitMap -> JPEG로 컨버트
+ </summary>
+ <param name="imgBitmap">비트맵 이미지</param>
+ <param name="lngQuality">퀄리티 0L~100L 사이 입력</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_LoadImageFromFile(System.String)">
+ <summary>
+ 이미지 파일로드. Image.FromFile 함수 사용할 경우에는 자꾸 파일을 물고있어서 따로 만듬.
+ </summary>
+ <param name="strFilePath"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_GetAPI(System.String)">
+ <summary>
+ API URL을 이용해 데이터 가져오기 
+ GET방식
+ </summary>
+ <param name="url">API 주소</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_IsExistColumnInDataRow(System.Data.DataRow,System.String)">
+ <summary>
+ DataRow 안에 컬럼유무 확인
+ </summary>
+ <param name="dr">DataRow</param>
+ <param name="strColumn">Column Name</param>
+ <returns>Object ( Columns Data )</returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.sG_SaveDockingLayout(System.Object@,System.String)">
+ <summary>
+ 도킹레이아웃 파일로 저장
+ </summary>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.sG_LoadDokingLayout(System.Object@,System.String,System.String)">
+ <summary>
+ 도킹레이아웃 파일 로드
+ </summary>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_FindPanelByName(DevExpress.XtraBars.Docking.DockManager,System.String)">
+ <summary>
+ 도킹판넬 타이틀로 찾기
+ </summary>
+ <param name="dockMngr"></param>
+ <param name="strDockName"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_FindPanelByHeader(DevExpress.XtraBars.Docking.DockManager,System.String)">
+ <summary>
+ 도킹판넬 해더 데이터로 찾기
+ </summary>
+ <param name="dockMngr"></param>
+ <param name="strHeader"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_CreatePanel(DevExpress.XtraBars.Docking.DockManager,System.String,DevExpress.XtraBars.Docking.DockingStyle,System.String)">
+ <summary>
+ 도킹판넬 만들어주는 함수
+ </summary>
+ <param name="dockMngr"></param>
+ <param name="strDockName"></param>
+ <param name="eDockStyle"></param>
+ <param name="strHeader"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.sG_ClosePanel(DevExpress.XtraBars.Docking.DockPanel)">
+ <summary>
+ 도킹판넬 닫아줌
+ </summary>
+ <param name="dockPane"></param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.sG_ClosePanel(DevExpress.XtraBars.Docking.DockManager,System.String)">
+ <summary>
+ 도킹판넬 해더로 찾아서 닫아줌
+ </summary>
+ <param name="dockMngr"></param>
+ <param name="strHeader"></param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.Popup(System.Object[])">
+ <summary>
+ Popup 함수
+ </summary>
+ <param name="param">팝업메뉴 리스트</param>
+ <returns>선택한 Popup Index</returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.Popup_Array(System.String[])">
+ <summary>
+ 배열을 받는 Popup 함수
+ </summary>
+ <param name="strMenuArray">팝업메뉴 리스트 배열</param>
+ <returns>선택한 Popup Index</returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_SendMessage(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr)">
+ <summary>
+ user32.dll 의 SendMgeesage 호출 함수
+ </summary>
+ <param name="hWnd"></param>
+ <param name="uMsg"></param>
+ <param name="WParam"></param>
+ <param name="LParam"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_GetComputerInfo">
+ <summary>
+ 현재 컴퓨터의 정보들 가져와서 Dictionary에 담아 반환해주는 함수.
+ </summary>
+ <returns>컴퓨터 정보가 담겨있는 Dictionary/ Keys : ComputerName , HostName , IP , OS , OSVersion , bit , Mac </returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_GetWindowRect(System.Int32)">
+ <summary>
+ 컨트롤의 모니터상의 위치값 가져오기
+ </summary>
+ <param name="hwnd">컨트롤 핸들값</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_CheckInternetConnection(System.String)">
+ <summary>
+ 인터넷 연결 체크
+ 22/07/04 명주 URL체크 가능하도록 Optional 변수 추가
+ <param name="strURL">체크 할 URL</param>
+ </summary>
+ <returns>True or False</returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_CreateBarCodeUB_InPath(System.String,System.String,System.String)">
+ <summary>
+ 지정한 경로 파일명에 UB바코드 생성해주는 함수
+ </summary>
+ <param name="strSource"></param>
+ <param name="strPath"></param>
+ <param name="strFileName"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.sG_SetSprCol(FarPoint.Win.Spread.FpSpread@,System.Int32,System.String,System.String,System.Boolean,System.Object,System.Int32,FarPoint.Win.Spread.CellHorizontalAlignment,FarPoint.Win.Spread.CellVerticalAlignment,System.String,System.Int32)">
+ <summary>
+ 스프레드 특정 Column 속성 설정하기
+ </summary>
+ <param name="sprR_Set">컬럼 설정할 스프레드</param>
+ <param name="intR_Col">설정할 컬럼 인덱스</param>
+ <param name="strR_Header">컬럼 헤더 명칭</param>
+ <param name="strR_DataField">DataSource 넣을 때 매칭 될 데이터 필드명</param>
+ <param name="blnR_Visible">컬럼 보이기 여부</param>
+ <param name="objR_CellType">CellType 객체. 넘기지 않을 경우 Label(Text)</param>
+ <param name="intR_Width">넓이</param>
+ <param name="HAlign">수평 정렬. 기본 센터</param>
+ <param name="VAlign">수직 정렬. 기본 센터</param>
+ <param name="strR_Tag">컬럼 태그</param>
+ <param name="HeaderColumnRow">Col Header가 두 줄 이상인 경우 몇번째 로우에 헤더세팅할건지</param> 23/08/24 준혁 추가
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.sG_SetSprStyle(FarPoint.Win.Spread.FpSpread@,System.Int32,FarPoint.Win.Spread.ScrollBarPolicy,FarPoint.Win.Spread.ScrollBarPolicy,FarPoint.Win.Spread.OperationMode,System.Boolean,System.Boolean,System.Boolean,System.Boolean,FarPoint.Win.Spread.HeaderAutoText,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Int32,NeoModule.mdlGlobalFunc.ClsFocusCellBorderRenderer_Custom,System.Boolean)">
+ <summary>
+ 스프레드 공용 셋팅
+ </summary>
+ <param name="sprR_Set">셋팅할 스프레드 객체.</param>
+ <param name="blnDefaultSkin">기본 Metallic 스킨을 사용할지 여부</param>
+ <param name="HScrollOption">수평 스크롤 여부</param>
+ <param name="VScrollOption">수직 스크롤 여부</param>
+ <param name="OperationMode">Cell 선택 모드 지정</param>
+ <param name="blnRowHeader">Row header를 보여줄지 여부</param>
+ <param name="blnColumnResize">Column Resize를 사용자가 가능하게 할지 여부</param>
+ <param name="blnUserColActionSort">상단 헤더 클릭시 해당 Column으로 정렬 할지 여부</param>
+ <param name="RowHeaderAutoText">Row Header의 자동증가값을 표기여부 및 표기한다면 문자열,숫자로 할지 지정</param>
+ <param name="blnOddRowColor">스트라이프 무늬를 지정하여 가독성을 높이는 디자인 사용여부.</param>
+ <param name="blnHoldSelectionNotFocus">스프레드가 포커스를 가지고 있지 않아도 Cell Selection Block을 표기할지 여부</param>
+ <param name="blnUseSelectionStyle">스프레드 현재 선택된 Cell들의 색상 스타일을 표기할지 여부. 표기하지 않을경우 Border만 적용.</param>
+ <param name="blnSelectionVisible">스프레드 Cell Selection Block을 표기할지 여부</param>
+ <param name="CellFocusRander">포커스 갖고 있는 Cell의 Border 설정 클래스</param>
+ <param name="blnEditMultiLineText">MultiLine으로 입력하는 Cell이 있을 때 Enter키를 누르면 EditModeOff가 되는게 아닌 다음줄로 이어서 입력 가능하도록 입력맵 변경.</param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.sG_SetDataSource(FarPoint.Win.Spread.FpSpread@,ADODB.Recordset,System.Int32,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+ <summary>
+ 스프레드 DataSource 넣어주기.
+ </summary>
+ <param name="sprDataSource">DataSource 삽입할 스프레드</param>
+ <param name="rstDataSet">삽입할 Recordset</param>
+ <param name="blnUSEDataFields">DataFields를 사용하는지 여부 지정. False 주면 Select 필드 순서대로 들어감.</param>
+ <param name="blnDAutoSizeCol">자동으로 DataSource ColWidth 변경할지 여부 지정</param>
+ <param name="blnDAutoColHeader">자동으로 DataSource의 Field 이름으로 Column Header를 지정할지 여부</param>
+ <param name="blnDAutoCellTypes">자동으로 DataSource의 Field 데이터 타입에 따라 스프레드의 타입을 변경할지 여부</param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.sG_SetResizeCol(FarPoint.Win.Spread.FpSpread@,System.Int32)">
+ <summary>
+ 지정 Column Resize 하기
+ </summary>
+ <param name="sprR_Resize">스프레드</param>
+ <param name="intCol">Resize할 컬럼</param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.sG_SetResizeCol(FarPoint.Win.Spread.FpSpread@,System.String)">
+ <summary>
+ 컬럼들을 ,로 구분하여 전달할 경우 넘겨준 Column들 전부 Resize하기
+ </summary>
+ <param name="sprR_Resize"></param>
+ <param name="strCols">Resize할 컬럼들 ,로 구분하여 전달</param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.sG_SprClear(FarPoint.Win.Spread.FpSpread@)">
+ <summary>
+ 스프레드 클리어해주기
+ </summary>
+ <param name="sprR_Clear"></param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_GetCellTypeEDIT(System.Boolean,System.Boolean,System.Boolean,System.Int32)">
+ <summary>
+ 기본 Edit/Label CellType 설정 가져오기
+ </summary>
+ <param name="blnLabel">라벨인지 여부</param>
+ <param name="blnUseArrowKeyMoveCell">EditMode상태에서 키보드 방향키 입력시 Editmode 강제로 끝내고 방향키 방향으로 Cell을 이동할지 여부 지정</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_GetCellTypeCheck(System.String)">
+ <summary>
+ 기본 체크박스 CellType 설정 가져오기
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_GetCellTypeNumeric(System.Boolean,System.String,System.Boolean,System.String,System.SByte,System.Boolean,System.Double,System.Double)">
+ <summary>
+ 기본 숫자 CellType 설정 가져오기
+ </summary>
+ <param name="blnShowSeparator">천단위 구분자 표시 여부</param>
+ <param name="strSeparator">천단위 구분자</param>
+ <param name="blnShow소수점">소수점 표시여부</param>
+ <param name="strDecimalSeparator">소수점 구분자</param>
+ <param name="bytDecimalPlaces">소수점 몇째 자리까지 표기할지.</param>
+ <param name="blnUseArrowKeyMoveCell">EditMode상태에서 키보드 방향키 입력시 Editmode 강제로 끝내고 방향키 방향으로 Cell을 이동할지 여부 지정</param>
+ <param name="dblMinValue"></param>
+ <param name="dblMaxValue"></param> '22/09/29 명주 천만단위까지 늘림
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_GetCellTypeCombo(System.String[],System.Boolean)">
+ <summary>
+ 기본 콤보박스 CellType 설정 가져오기
+ </summary>
+ <param name="strItemsArr">콤보 셋팅할 리스트 문자열 배열</param>
+ <param name="blnEditable"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_GetCellTypeDateTime(System.String)">
+ <summary>
+ DateTime Celltype 설정 가져오기
+ </summary>
+ <param name="strUserFormat">날짜 포맷</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_GetCellTypeImage(FarPoint.Win.RenderStyle)">
+ <summary>
+ 이미지 CellType 가져오기
+ </summary>
+ <param name="RenderStyle"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_GetCellTypeButton(System.String)">
+ <summary>
+ 버튼 CellType 가져오기
+ </summary>
+ <param name="strText"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.sG_SetSprFont(FarPoint.Win.Spread.FpSpread@,System.Int32,System.Int32,System.Int32,System.Int32,System.Drawing.FontStyle,System.String,System.Int32,System.Drawing.Color)">
+ <summary>
+ 스프레드 폰트 설정하기
+ </summary>
+ <param name="sprR_SetFont">스프레드</param>
+ <param name="intRow">Row1</param>
+ <param name="intCol">Col1</param>
+ <param name="intRow2">Row2</param>
+ <param name="intCol2">Col2</param>
+ <param name="fontStyle">폰트 스타일</param>
+ <param name="strfontName">폰트 이름</param>
+ <param name="intfontSize">폰트 크기</param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_SearchCol(FarPoint.Win.Spread.FpSpread,System.String,System.Int32,System.Int32,System.Int32,System.Boolean,System.Boolean)">
+ <summary>
+ 지정 Column의 내용 검색하기
+ </summary>
+ <param name="Spread">스프레드</param>
+ <param name="strFindText">찾을 문자열</param>
+ <param name="intCol">지정 Column</param>
+ <param name="intStartRow">검색 시작 Row 기본 0</param>
+ <param name="intEndRow">검색 마지막 Row 기본 MaxRow</param>
+ <param name="bln대소문자">대소문자 구분할지 여부</param>
+ <returns>일치하는 Row 반환. 없을경우 -1</returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_SearchRow(FarPoint.Win.Spread.FpSpread,System.String,System.Int32,System.Int32,System.Int32,System.Boolean,System.Boolean)">
+ <summary>
+ 지정 Row의 내용 검색하기
+ </summary>
+ <param name="Spread">스프레드</param>
+ <param name="strFindText">찾을 문자열</param>
+ <param name="intRow">지정 Row</param>
+ <param name="intStartCol">검색 시작 Column 기본 0</param>
+ <param name="intEndCol">검색 마지막 Column 기본 MaxCol</param>
+ <param name="bln대소문자">대소문자 구분할지 여부</param>
+ <returns>일치하는 Column 반환. 없을경우 -1</returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.sG_SetSprCellNote(FarPoint.Win.Spread.FpSpread,System.Int32,System.Int32,System.String,System.Drawing.Color,FarPoint.Win.Spread.NoteIndicatorPosition,FarPoint.Win.Spread.NoteStyle,System.Drawing.Size,System.Int32,System.Int32,System.Drawing.Color)">
+ <summary>
+ CellNote 셋팅하기
+ </summary>
+ <param name="Spread"></param>
+ <param name="intRow"></param>
+ <param name="intCol"></param>
+ <param name="strText"></param>
+ <param name="Color"></param>
+ <param name="Position">CellNote 메모 표기위치</param>
+ <param name="NoteStyle">CellNote 스타일 지정</param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.sG_SetSprCellBackColor(FarPoint.Win.Spread.FpSpread,System.Drawing.Color,System.Int32,System.Int32)">
+ <summary>
+ BackColor 가져오기
+ </summary>
+ <param name="rSpr"></param>
+ <param name="rColor"></param>
+ <param name="rRow"></param>
+ <param name="rCol"></param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.sG_SetSprCellBorder(FarPoint.Win.Spread.FpSpread,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Drawing.Color,System.Byte,System.Drawing.Drawing2D.DashStyle)">
+ <summary>
+ 스프레드 CellBorder
+ </summary>
+ <param name="sprR_Border">스프레드</param>
+ <param name="intRow">Row1</param>
+ <param name="intCol">Col1</param>
+ <param name="intRow2">Row2</param>
+ <param name="intCol2">Col2</param>
+ <param name="blnLeft">좌측에 외곽선 표기 여부</param>
+ <param name="blnTop">상단에 외곽선 표기 여부</param>
+ <param name="blnRight">우측에 외곽선 표기 여부</param>
+ <param name="blnBottom">하단에 외곽선 표기 여부</param>
+ <param name="LineColor">외곽선 색상</param>
+ <param name="LineWidth">선 굵기</param>
+ <param name="LineStyle">선 스타일</param>
+</member>
+<member name="T:NeoModule.mdlGlobalFunc.ClsFocusCellBorderRenderer_Custom">
+ <summary>
+ 포커스 Cell의 Border 커스텀 클래스. → 스프레드의 CellBorder를 표기하고 싶지 않은데 자체 제공함수가 없어서 확장하여 처리.
+ </summary>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.ClsFocusCellBorderRenderer_Custom.#ctor">
+ <summary>
+ 기본. Cell Focus Border 표기하고 싶지 않을 경우.
+ </summary>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.ClsFocusCellBorderRenderer_Custom.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+ <summary>
+ 선 넓이 1, 선 색상 검정. 그 외 표기여부만 설정~
+ </summary>
+ <param name="left">Left 표기 여부</param>
+ <param name="top">Top 표기 여부</param>
+ <param name="right">Right 표기 여부</param>
+ <param name="bottom">Bottom 표기 여부</param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.ClsFocusCellBorderRenderer_Custom.#ctor(System.Byte,System.Drawing.Color,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+ <summary>
+ 여기서 설정한대로 그려짐~
+ </summary>
+ <param name="bytBorderWidth">선 넓이</param>
+ <param name="BorderColor">외곽선 색상</param>
+ <param name="left">Left 표기 여부</param>
+ <param name="top">Top 표기 여부</param>
+ <param name="right">Right 표기 여부</param>
+ <param name="bottom">Bottom 표기 여부</param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.sG_GridInit(DevExpress.XtraGrid.GridControl@,DevExpress.XtraGrid.Views.Grid.GridView@,DevExpress.XtraGrid.Views.Grid.NewItemRowPosition,System.String,System.Boolean,System.Boolean,DevExpress.XtraGrid.Views.Grid.GridEditingMode,System.Boolean,System.Boolean,System.Boolean,DevExpress.XtraGrid.Views.Grid.EditFormBindingMode,System.Boolean,System.Boolean,System.Boolean,System.Int32,System.Boolean,System.Boolean,System.Boolean,System.Boolean,DevExpress.Utils.DefaultBoolean,System.Boolean,System.Boolean,System.Byte)">
+ <summary>
+ 그리드 컨트롤 기본 속성 정의
+ </summary>
+ <param name="grdCtrl">정의할 그리드</param>
+ <param name="grdView">정의할 그리드 내의 사용하는 뷰</param>
+ <param name="NewItemPosition">새 로우 추가 사용여부 및 위치</param>
+ <param name="NewItemRowText">새 로우 추가 안내 문구</param>
+ <param name="BestFitMode">컬럼 Width 자동으로 맞춤 ( 그리드 넓이에 맞춤 ) </param>
+ <param name="Editable">그리드 수정 가능 여부</param>
+ <param name="EditingMode">
+         그리드 수정 모드 ( 로우에서 바로 수정:inplace, 로우 밑에 수정폼 생성:EditFormInplace,EditFormInplaceHideCurrentRow, 수정폼 팝업: EditForm)
+ </param>
+ <param name="AllowEditOnDbleClick">더블클릭으로 수정 가능</param>
+ <param name="AllowEditOnEnterKey">Enter Key로 수정 가능</param>
+ <param name="AllowEditOnF2Key">F2 Key로 수정 가능</param>
+ <param name="BindingMode">수정 후 적용 시점 (바로 적용 : direct, 모아서 한번에 적용 : Cache)</param>
+ <param name="IndicatorType">ShowIndicator 사용시, Indicator에 표기할 형식을 설정. 0:Selector, 1:Numbering</param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_GridAddCol(DevExpress.XtraGrid.Views.Grid.GridView@,System.String,System.String,System.Boolean,System.Object,System.Boolean,System.Boolean,System.Drawing.Color,System.Drawing.Color,DevExpress.Utils.HorzAlignment,DevExpress.Utils.VertAlignment,DevExpress.XtraGrid.Columns.FixedStyle,System.String,DevExpress.Utils.ImageCollection,System.Boolean,System.String,DevExpress.Utils.DefaultBoolean,DevExpress.XtraGrid.ColumnSortMode,System.Boolean,System.Boolean,DevExpress.Data.SummaryItemType,System.String,System.Boolean,DevExpress.Utils.DefaultBoolean,System.Boolean,DevExpress.Utils.DefaultBoolean)">
+ <summary>
+ 그리드 컬럼 추가
+ </summary>
+ <param name="grdView">컬럼을 추가할 그리드의 뷰</param> 
+ <param name="Caption">컬럼 명칭</param>
+ <param name="FieldName">데이터 바인딩 필드 명칭</param>
+ <param name="Visibility">컬럼 visible </param>
+ <param name="ColumnEdit">컬럼 속성 (RepositoryItem)</param>
+ <param name="isReadOnly">컬럼 수정 가능 여부 (초기화때 Editabled을 False주면 무조건 ReadOnly = True 됨)</param>
+ <param name="isGroup">해당 컬럼으로 그룹화 여부</param>
+ <param name="HeaderForeColor">해더 폰트 색상</param>
+ <param name="HeaderBackColor">해더 배경 색상</param>
+ <param name="HAlignment">수평 정렬</param>
+ <param name="VAlignment">수직 정렬</param>
+ <param name="Fixed">컬럼 고정 위치 지정</param>
+ <param name="ImageName">컬럼의 데이터를 이미지로 표현할때 이미지 명칭 (ImageCollection 필수)</param>
+ <param name="ImageCollection">컬럼의 데이터를 표현할 이미지 Collection</param>
+ <param name="isCaptionHide">컬럼의 데이터를 이미지로 표현할때 데이터도 같이 표기할지 여부</param>
+ <param name="strComboStr">컬럼을 콤보박스로 사용할때 (현재 사용안함)</param>
+ <param name="AllowSort">컬럼 정렬기능 활성화 여부</param>
+ <param name="SortMode">컬럼 정렬기능 사용할때 어떤 데이터로 정렬할지 선택</param>
+ <param name="isMoney">금액 표시 컬럼 여부(True일경우 ￦을 붙힘)</param>
+ <param name="AddSummaryItem">하단의 합계로우에 표기할지 여부</param>
+ <param name="SummaryType">합계 타입(건수 합계, 데이터 합, 최대, 최소 등)</param>
+ <param name="SummaryDisplayFormat">합계에 표기할때의 Format</param>
+ <param name="isAutoFillColumn">자동으로 Resize 처리될 컬럼인지 여부</param>
+ <param name="isPrintable">출력시 표기할지 여부</param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_GridSetColumnEdit(DevExpress.XtraEditors.Repository.RepositoryItemTextEdit,DevExpress.XtraEditors.Mask.MaskType,System.String)">
+ <summary>
+ 그리드 컬럼 속성 설정 함수 (텍스트)
+ </summary>
+ <param name="RepoTextEdit">컬럼에 설정할 텍스트 에디터</param>
+ <param name="MaskType">텍스트 마스크 타입</param>
+ <param name="EditMaskFormat">텍스트 마스크 형식</param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_GridSetColumnEdit(DevExpress.XtraEditors.Repository.RepositoryItemComboBox,System.String[],DevExpress.XtraEditors.Controls.TextEditStyles)">
+ <summary>
+ 그리드 컬럼 속성 설정 함수 (콤보박스)
+ </summary>
+ <param name="RepoComboEdit">컬럼에 설정할 콤보박스</param>
+ <param name="ComboItems">콤보 아이템 배열</param>
+ <param name="TextEditStyle">콤보박스 텍스트 수정여부</param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_GridSetColumnEdit(DevExpress.XtraEditors.Repository.RepositoryItemTimeEdit,NeoModule.mdlGlobalFunc.enTimeEditFormat,System.String,System.String)">
+ <summary>
+ 그리드 컬럼 속성 설정 함수 (시간)
+ </summary>
+ <param name="RepoTimeEdit">컬럼에 설정할 시간 에디터</param>
+ <param name="TimeFormat">시간 표현 형식</param>
+ <param name="DateDelimiter">날짜 구분자</param>
+ <param name="TimeDelimiter">시간 구분자</param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_GridSetColumnEdit(DevExpress.XtraEditors.Repository.RepositoryItemDateEdit,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+ <summary>
+ 그리드 컬럼 속성 설정 함수 (달력)
+ </summary>
+ <param name="RepoDateEdit">컬럼에 설정할 달력 에디터</param>
+ <param name="showMonthHeaders">달력 월 표시</param>
+ <param name="showMonthNavigationButtons">월 이동 버튼 표시</param>
+ <param name="showOk">확인 버튼 표시</param>
+ <param name="showToday">오늘로 이동 버튼 표시</param>
+ <param name="showYearNavigationButtons">년도 이동 버튼 표시</param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.sG_GridAddRule(DevExpress.XtraGrid.Views.Grid.GridView@,DevExpress.XtraGrid.Columns.GridColumn@,System.String,System.String,NeoModule.mdlGlobalFunc.enGridRuleAppearance,DevExpress.XtraEditors.FormatCondition,System.Object,System.Object,System.Boolean,System.Boolean)">
+ <summary>
+ 그리드 컬럼에 서식 부여
+ </summary>
+ <param name="grdView">서식을 부여받을 컬럼이 속한 그리드 뷰</param>
+ <param name="ApplyRuleColumn">서식을 부여받을 컬럼 객체</param>
+ <param name="ApplyRuleColumnName">서식을 부여받을 컬럼 이름</param>
+ <param name="ApplyRuleColumnFieldName">서식을 부여받을 컬럼 필드이름</param>
+ <param name="PredefinedName">미리정의된 서식이름</param>
+ <param name="Condition">서식이 적용될 조건</param>
+ <param name="Value1">서식이 적용될 조건의 기준값(Value2가 있을땐 Min)</param>
+ <param name="Value2">서식이 적용될 조건의 기준값(Max)</param>
+ <param name="AllowEntireRow">서식을 행 전체에 적용시킬지 여부</param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_CreateImageCombo(DevExpress.Utils.ImageCollection,System.String)">
+ <summary>
+ 그리드 컬럼에 데이터를 이미지로 표현함
+ </summary>
+ <param name="Images"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_GetDisplayText(DevExpress.XtraGrid.Views.Grid.GridView,DevExpress.XtraGrid.Views.Base.CustomColumnDisplayTextEventArgs,System.String)">
+ <summary>
+ Grid Datsource로 넣을 때 CustomColumnDisplayTextEvent 에서 변경하는 값들에 대한 공통 처리.
+ </summary>    
+ <returns>DisplayText</returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.sG_GridDatasource(DevExpress.XtraGrid.GridControl,DevExpress.XtraGrid.Views.Grid.GridView,ADODB.Recordset)">
+ <summary>
+ Grid에 RecordSet으로 DataSource 셋팅할 때 씀
+ </summary>
+ <param name="grdList"></param>
+ <param name="grdView"></param>
+ <param name="DataSource"></param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_GridRowGroupIndexByRowHandle(DevExpress.XtraGrid.Views.Grid.GridView,System.Int32)">
+ <summary>
+ 그리드 그룹 사용시 그룹 로우 넘버 찍어주기위해 그룹별 로우 인덱스 구하기
+ </summary>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_GridFindColumnByCaption(DevExpress.XtraGrid.Columns.GridColumnCollection,System.String)">
+ <summary>
+ 그리드 컬럼 헤더 명칭으로 컬럼 찾기
+ </summary>
+ <param name="Cols"></param>
+ <param name="strFindCaption"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_GetLastMonthDay(System.String)">
+ <summary>
+ 각 월의 마지막일자 가져오는 함수 추가
+ </summary>
+ <param name="strDate"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.sG_Print약티켓(FarPoint.Win.Spread.FpSpread@,System.String,System.String,System.Int32,System.String,System.Boolean,System.Byte)">
+ <summary>
+ 약티켓 출력 기능
+ </summary>
+ <param name="sprPrint">출력 셋팅할 스프레드</param>
+ <param name="strV_챠트번호List">선택한 환자들 챠트번호 String. |(conG_구분자)로 구분.</param>
+ <param name="strR_Date">출력 기준일자(진료일자)</param>
+ <param name="intR_약국오더데이">약국 오더데이 일수 옵션(기타설정)</param>
+ <param name="strR_사용자">출력물에 표출 될 사용자</param>
+ <param name="blnR_퇴원약">퇴원약을 출력할지 여부. 기본 False</param>
+ <param name="bytR_매수">몇장을 출력할지 지정. 기본 1장</param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_ConvertSunToLun(System.String,System.Boolean@)">
+ <summary>
+ 양력 -> 음력 변환 함수
+ </summary>
+ <param name="strDate">변환할 날짜</param>
+ <param name="blnR_윤달여부">변환한 음력달이 윤달인지 여부</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_ConvertLunToSun(System.Int32,System.Int32,System.Int32)">
+ <summary>
+ 음력 -> 양력 변환 함수
+ </summary>
+ <param name="intMonth">음력 달</param>
+ <param name="intDay">음력 일</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_Get하이로우(NeoModule.mdlGlobal.ocsEnumOutLab,System.String,System.Single,System.Single,System.Single,System.Single,System.String,System.String,System.String,NeoModule.mdlGlobal.ocsEnumHighLow,System.String)">
+ <summary>
+ 하이로우 계산하기
+ </summary>
+ <param name="m연동구분">TB_검사항목 연동구분 필드 (수탁기관 송신하면 연동구분에 해당 수탁기관 Enum값이 들어감)</param>
+ <param name="str성별">사용자 성별(여/남)</param>
+ <param name="sng참고치1">TB_검사항목 검사참고치1 필드</param>
+ <param name="sng참고치2">TB_검사항목 검사참고치2 필드</param>
+ <param name="sng참고치3">TB_검사항목 검사참고치3 필드</param>
+ <param name="sng참고치4">TB_검사항목 검사참고치4 필드</param>
+ <param name="str참고치">TB_검사항목 참고치 필드</param>
+ <param name="strM참고치">TB_처방코드 참고치 필드</param>
+ <param name="str검사결과">TB_검사항목 검사결과 필드</param>
+ <param name="m하이로우">TB_검사항목 하이로우 필드</param>
+ <param name="str수탁기관기호">TB_진료내역 수탁기관기호 필드</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_MsgBox(System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon,System.String,System.Windows.Forms.IWin32Window,System.Windows.Forms.MessageBoxDefaultButton)">
+ <summary>
+ 공용 메세지박스
+ </summary>
+ <param name="owner">오너 폼</param>
+ <param name="Prompt">메세지 문구</param>
+ <param name="Buttons">버튼 종류</param>
+ <param name="Icon">아이콘 종류(Information, Error 등)</param>
+ <param name="Title">메시지 타이틀</param>
+ <param name="DefaultButtons">기본 버튼 포커스</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_InputBox(System.String,System.String,System.String)">
+ <summary>
+ 공용 입력 메세지박스
+ </summary>
+ <param name="Prompt">메세지 문구</param>
+ <param name="Title">메세지 타이틀</param>
+ <param name="DefaultResponse">기본 입력값</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.sG_ShowToast(System.String,System.String,System.Windows.Forms.Form,System.Action,DevExpress.XtraBars.Alerter.AlertFormLocation)">
+ <summary>
+ Callback 사용법
+ inline 함수 호출 시
+ sG_ShowToast("메시지", "타이틀", 소유폼, sub() msgbox("콜백"))
+ 분리된 함수 호출 시
+ sG_ShowToast("메시지", "타이틀", 소유폼, sub() myCallbackFunction())
+ </summary>
+ <param name="Prompt"></param>
+ <param name="Title"></param>
+ <param name="Parent"></param>
+ <param name="fnCallback"></param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_GetImageFromCollection(DevExpress.Utils.ImageCollection,System.String)">
+ <summary>
+ 이미지 컬랙션과 이미지 이름을 넘겨주면 이미지를 준데요
+ </summary>
+ <param name="ImagePocket">이미지 컬렉션</param>
+ <param name="ImageName">이미지 명칭</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_IsContain(System.String,System.String[])">
+ <summary>
+ 문자열에 여러개의 단어중 한개라도 포함하고 있으면 포함하는 문자를 줘요
+ 없으면 빈문자열을 줘요
+ </summary>
+ <param name="strTarget">검색대상 문자열</param>
+ <param name="strWords">검색할 문자 배열</param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_IsMatch(System.String,System.String[])">
+ <summary>
+ 배열의 문자들 중 타겟문자와 같은 단어가 있는지 체크
+ </summary>
+ <param name="strTarget">검색대상 문자열</param>
+ <param name="strWords">검색할 문자 배열</param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.sG_CalcLMSPercent(System.String,System.Single,System.Single,System.Single,System.String,System.Decimal@,System.String@)">
+ <summary>
+ 성장곡선 LMS 백분위 측정 함수
+ </summary>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fP_StringCount(System.String,System.Int32)">
+ <summary>
+ length만큼 공백 띄워주는 함수
+ </summary>
+ <param name="strString"></param>
+ <param name="intLength"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.sP_공용폼실행(NeoModule.mdlGlobal.ocsEnum공용폼Kind,System.String)">
+ <summary>
+ 센스 neochart.dll에서 사용하는 공용폼 함수들 호출하기 위해 추가된 함수. NET_Brigde.exe는 neochart.dll을 참조하고 있는 VB6 프로그램으로, .NET에서 센스의 공용폼을 띄우기 위해 추가된 프로그램.
+ </summary>
+ <param name="RunKind">실행할 종류.</param>
+ <param name="strParam">파라메터(챠트번호 등)</param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.sP_매크로실행(System.String,System.Int32,System.Object)">
+ <summary>
+ 매크로 폼 실행
+ </summary>
+ <param name="str매크로종류">매크로 종류</param>
+ <param name="intOwnerHwnd">부모창 핸들.</param>
+ <param name="objTarget">타겟 컨트롤</param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.sP_RunProgram(NeoModule.mdlGlobal.Log실행파일구분,System.String,System.String,System.Boolean)">
+ <summary>
+ 센스, .NET등의 프로그램 실행해주기
+ </summary>
+ <param name="enProgramKind"></param>
+ <param name="str챠트번호"></param>
+ <param name="strFileName">불임챠트 커스텀파일 실행을위해 추가함</param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.sG_luADDItem(DevExpress.XtraEditors.LookUpEdit@,System.String,System.String)">
+ <summary>
+ LookUpEdit에 Item 추가 해주는 함수
+ </summary>
+ <param name="luR_Add">Item을 추가할 LookUpEdit 컨트롤</param>
+ <param name="strCode">코드 값</param>
+ <param name="strValue">명칭 값</param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.sG_luRmoveItem(DevExpress.XtraEditors.LookUpEdit@,System.String,System.String)">
+ <summary>
+ LookUpEdit에 특정 Item 제거하기
+ </summary>
+ <param name="luR_Add"></param>
+ <param name="strCode"></param>
+ <param name="strValue"></param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.sG_luADDComboStr(DevExpress.XtraEditors.LookUpEdit@,System.String,System.Int32,System.Boolean,System.Boolean,System.Boolean)">
+ <summary>
+ 센스,메디에서 쓰던 콤보스트링으로 LookUpEdit 컨트롤에 셋팅하기
+ </summary>
+ <param name="luR_Add">Item을 추가할 LookUpEdit 컨트롤</param>
+ <param name="strComboStr">콤보 문자열( |#코드;명칭|#코드;명칭 ...) </param>
+ <param name="int표기행수">콤보 몇개 표기할지 지정</param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.sG_luADDComboStr(DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit@,System.String,System.Int32,System.Boolean,System.Boolean,System.Boolean)">
+ <summary>
+ 센스,메디에서 쓰던 콤보스트링으로 LookUpEdit 컨트롤에 셋팅하기
+ DevExpress의 RepositoryItem 으로 추가된 LookUpEdit은 properties 속성이 없어 오버로드 시킴
+ </summary>
+ <param name="luR_Add">Item을 추가할 LookUpEdit 컨트롤</param>
+ <param name="strComboStr">콤보 문자열( |#코드;명칭|#코드;명칭 ...) </param>
+ <param name="int표기행수">콤보 몇개 표기할지 지정</param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.sG_luADDComboStr(DevExpress.XtraEditors.CheckedComboBoxEdit@,System.String,System.Int32,System.Boolean,System.Boolean)">
+ <summary>
+ 센스,메디에서 쓰던 콤보스트링으로 CheckedComboBoxEdit 컨트롤에 셋팅하기
+ DevExpress의 RepositoryItem 으로 추가된 CheckedComboBoxEdit properties 속성이 없어 오버로드 시킴
+ </summary>
+ <param name="chkCboR_Add">Item을 추가할 CheckedComboBoxEdit 컨트롤</param>
+ <param name="strComboStr">콤보 문자열( |#코드;명칭|#코드;명칭 ...) </param>
+ <param name="int표기행수">콤보 몇개 표기할지 지정</param>
+</member>
+<member name="T:NeoModule.mdlGlobalFunc.luCodeValue">
+ <summary>
+ lookUpEdit 컨트롤 셋팅을 위한 Code/Value 담기 클래스
+ </summary>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.sG_SetCheckAllCbo(DevExpress.XtraBars.BarEditItem@,DevExpress.XtraEditors.Repository.RepositoryItemCheckedComboBoxEdit@,System.String)">
+ <summary>
+ 체크콤보 전체 선택해주기
+ </summary>
+ <param name="CheckedCbo">체크콤보를 갖고있는 BarEditItem</param>
+ <param name="CheckedCboEdit">체크콤보 컨트롤</param>
+ <param name="SavedValue">전체선택말구 SavedValue 값으로 체크해주기</param>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fG_IsAllItemsChecked(DevExpress.XtraEditors.Repository.RepositoryItemCheckedComboBoxEdit)">
+ <summary>
+ 체크콤보 전체체크 상태인지 아닌지 확인
+ </summary>
+ <param name="CheckedCbo"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fP_ExcutePACSViewer(System.String,System.String,System.String,System.String)">
+ <summary>
+ 팍스뷰어 실행
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fP_Get급여명칭(System.String)">
+ <summary>
+ 급여코드로 급여명칭 가져오기. Sense에서부터 TB_코드정보가 아닌 하드코딩이 되어있어 어쩔 수 없이 똑같이 함.
+ </summary>
+ <param name="급여코드"></param>
+ <returns></returns>
+</member>
+<member name="M:NeoModule.mdlGlobalFunc.fP_Get공상명칭(System.String,System.Boolean)">
+ <summary>
+ 공상구분 코드로 공상구분 명칭 가져오기. Sense에서부터 TB_코드정보가 아닌 하드코딩이 되어있어 어쩔 수 없이 똑같이 함.
+ </summary>
+ <param name="공상코드"></param>
+ <param name="blnLong">자세히:True , 간단히:False </param>
+ <returns></returns>
+</member>
+<member name="T:NeoModule.NeoCustomDock.NeoDockManager">
+ <summary>
+ DockManger, DockLayout, DockPanel를 상속받아서 레이아웃 관련 재정의 진행.	
+ </summary>
+</member>
+<member name="P:NeoModule.NeoCustomForm.NeoForm.EscapeKeyClose">
+ <summary>
+ ESC Key로 Form Close할 지 여부를 지정합니다. CancelButton을 지정한 경우 Close가 아닌 CancelButton_Click 이벤트가 발생합니다.
+ </summary>
+ <returns></returns>
+</member>
+<member name="T:NeoModule.NeoCustomGrid.FooterPosition">
+ <summary>
+ Footer Summary Position
+ </summary>
+</member>
+<member name="M:NeoModule.NeoCustomGrid.NeoGridView.SaveLayoutToINI(System.String,System.String,System.String)">
+ <summary>
+ 그리드 컬럼 정보를 String 형으로 Ini에 저장
+ 컬럼 Order, 컬럼 Width, 컴럼 Visibility 만 저장
+ </summary>
+</member>
+<member name="M:NeoModule.EditComboList.SetComboList(System.String,System.String,System.Boolean)">
+ <summary>
+ 콤보리스트 세팅
+ </summary>
+ <param name="strComboList">콤보리스트 text1|text2 ... </param>
+ <param name="MacroCode">코드정보의 매크로리스트</param>
+ <param name="OnlyUsedUser">로그인한 사용자의 매크로만 가져올지 여부</param>
+</member>
+<member name="M:NeoModule.Drawable.MoveRelative(System.Int32,System.Int32)">
+ <summary>
+ 개체를 주어진 거리만큼 이동
+ </summary>
+ <param name="dx">distance x point</param>
+ <param name="dy">distance y point</param>
+</member>
+<member name="P:NeoModule.ImageEditor.ShowMainToolBar">
+ <summary>
+ 이미지 에디터 자체 메인툴바 사용여부
+ </summary>
+</member>
+<member name="P:NeoModule.ImageEditor.ShowEditToolBar">
+ <summary>
+ 이미지 에디터 도구 툴바 사용여부
+ </summary>
+</member>
+<member name="P:NeoModule.ImageEditor.ShowMenuFile">
+ <summary>
+ 이미지 에디터 자체 메인툴바의 파일 메뉴 표시 여부
+ </summary>
+</member>
+<member name="P:NeoModule.ImageEditor.ShowMenuImageCombo">
+ <summary>
+ 이미지 에디터 기본 이미지 저장경로의 이미지리스트 콤보박스 표시 여부
+ </summary>
+</member>
+<member name="P:NeoModule.ImageEditor.ShowMenuSave">
+ <summary>
+ 이미지 에디터 자체 메인툴바의 저장메뉴 표시 여부
+ </summary>
+</member>
+<member name="P:NeoModule.ImageEditor.ShowMenuDelete">
+ <summary>
+ 이미지 에디터 자체 메인툴바의 삭제메뉴 표시 여부
+ </summary>
+</member>
+<member name="P:NeoModule.ImageEditor.ShowMenuExport">
+ <summary>
+ 이미지 에디터 자체 메인툴바의 내보내기메뉴 표시 여부
+ </summary>
+</member>
+<member name="P:NeoModule.ImageEditor.IsEdit">
+ <summary>
+ 이미지 편집을 하였는가 판단
+ </summary>
+</member>
+<member name="M:NeoModule.ImageEditor.sP_LoadImage(System.String)">
+ <summary>
+ 이미지 로드
+ </summary>
+ <param name="strEditImage">별도의 이미지 로드할때 사용</param>
+</member>
+<member name="M:NeoModule.ImageEditor.fP_SavePicture(System.String)">
+ <summary>
+ 이미지 저장
+ </summary>
+ <param name="ImageType">이미지 타입 ( .bmp, .gif, .jpg, .jpeg, .png, .tif, .tiff )</param>
+ <returns>저장 성공시 저장된 이미지 경로 반환, 실패시 빈값</returns>
+</member>
+</members>
+</doc>
